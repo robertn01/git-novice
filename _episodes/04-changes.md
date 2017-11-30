@@ -362,13 +362,20 @@ To allow for this, Git has a special *staging area* where it keeps
 
 Let's watch as our changes to a file move from our editor
 to the staging area and into long-term storage.
-First, we'll add another line to the file:
+First, we'll add another line to the file. Remember to save and exit the file in Nano by typing `CTRL + O` followed by `enter` and then `CTRL + X`.
 
 ~~~
 $ nano ToDo.txt
+~~~
+{: .bash}
+
+![Add extra lines to the existing file ToDo.txt](../fig/git-add-more-lines.png)
+
+~~~
 $ cat ToDo.txt
 ~~~
 {: .bash}
+
 
 ~~~
 Conversion functions needed:
@@ -458,7 +465,10 @@ $ git status
 
 ~~~
 On branch master
+Your branch is ahead of 'origin/master' by 3 commits.
+  (use "git push" to publish your local commits)
 nothing to commit, working directory clean
+
 ~~~
 {: .output}
 
