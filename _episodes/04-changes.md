@@ -270,7 +270,6 @@ index 497e6b4..49e6774 100644
  - Gallons to Liters
 -- Hours to Minutes
 \ No newline at end of file
-+- Hours to Minutes
 +- Feet to Inches
 ~~~
 {: .output}
