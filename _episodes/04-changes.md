@@ -26,7 +26,7 @@ $ nano ToDo.txt
 ~~~
 {: .bash}
 
-Type the text below into the `ToDo.txt` file:
+Type the text below into the `ToDo.txt` file. Remember to save and exit you can type `CTRL + O` (then enter) followed by `CTRL + X`.
 
 ~~~
 Conversion functions needed:
@@ -45,7 +45,7 @@ $ ls
 {: .bash}
 
 ~~~
-ToDo.txt
+README.md	ToDo.txt
 ~~~
 {: .output}
 
