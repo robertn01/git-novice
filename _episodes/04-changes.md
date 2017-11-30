@@ -195,7 +195,7 @@ Date:   Thu Aug 22 09:51:46 2013 -0400
 
 > ## Where Are My Changes?
 >
-> If we run `ls` at this point, we will still see just one file called `ToDo.txt`.
+> If we run `ls` at this point, we will still see just two files called `README.md` and `ToDo.txt`.
 > That's because Git saves information about files' history
 > in the special `.git` directory mentioned earlier
 > so that our filesystem doesn't become cluttered
