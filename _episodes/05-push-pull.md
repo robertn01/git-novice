@@ -63,7 +63,8 @@ To https://github.com/biologyguy/conversions.git
 
 &nbsp;
 
-Now all of the changes have been uploaded to GitHub:
+If you refresh your browswer showing your Github repository created earlier in the lesson, it will
+now show all of the changes that have been uploaded to GitHub:
 
 ![Creating a Repository on GitHub (Step 3)](../fig/github-changes-03.png)
 
