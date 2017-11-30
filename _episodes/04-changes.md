@@ -202,10 +202,16 @@ Date:   Thu Aug 22 09:51:46 2013 -0400
 > (and so that we can't accidentally edit or delete an old version).
 {: .callout}
 
-Now suppose we add more information to the ToDo.txt file.
+Now suppose we add more information to the ToDo.txt file. Remember to save and exit the file in Nano by typing `CTRL + O` followed by `enter` and then `CTRL + X`.
 
 ~~~
 $ nano ToDo.txt
+~~~
+{: .bash}
+
+![Add extra lines to the existing file ToDo.txt](../fig/git-add-lines.png)
+
+~~~
 $ cat ToDo.txt
 ~~~
 {: .bash}
