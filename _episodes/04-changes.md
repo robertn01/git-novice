@@ -294,7 +294,6 @@ After reviewing our change, it's time to commit it:
 
 ~~~
 $ git commit -m "Add another desirable conversion tool"
-$ git status
 ~~~
 {: .bash}
 
