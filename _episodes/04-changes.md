@@ -167,7 +167,7 @@ origin (the repository from which we cloned this one, i.e. the original reposito
 by one commit.
 
 It also tells us that we can use the `git push` command to send our commit to the original repo in 
-Github to syncronise these two repositories.
+Github to synchronize these two repositories.
 
 If we want to know what we've done recently,
 we can ask Git to show us the project's history using `git log`:
