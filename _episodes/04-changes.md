@@ -26,7 +26,7 @@ $ nano ToDo.txt
 ~~~
 {: .bash}
 
-Type the text below into the `ToDo.txt` file:
+Type the text below into the `ToDo.txt` file. Remember to save and exit you can type `CTRL + O` (then enter) followed by `CTRL + X`.
 
 ~~~
 Conversion functions needed:
@@ -45,7 +45,7 @@ $ ls
 {: .bash}
 
 ~~~
-ToDo.txt
+README.md	ToDo.txt
 ~~~
 {: .output}
 
@@ -156,11 +156,19 @@ $ git status
 
 ~~~
 On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
 nothing to commit, working directory clean
 ~~~
 {: .output}
 
-it tells us everything is up to date.
+it tells us that our local repository is now differing from the
+origin (the repository from which we cloned this one, i.e. the original repository in Github)
+by one commit.
+
+It also tells us that we can use the `git push` command to send our commit to the original repo in 
+Github to synchronize these two repositories.
+
 If we want to know what we've done recently,
 we can ask Git to show us the project's history using `git log`:
 
@@ -187,17 +195,23 @@ Date:   Thu Aug 22 09:51:46 2013 -0400
 
 > ## Where Are My Changes?
 >
-> If we run `ls` at this point, we will still see just one file called `ToDo.txt`.
+> If we run `ls` at this point, we will still see just two files called `README.md` and `ToDo.txt`.
 > That's because Git saves information about files' history
 > in the special `.git` directory mentioned earlier
 > so that our filesystem doesn't become cluttered
 > (and so that we can't accidentally edit or delete an old version).
 {: .callout}
 
-Now suppose we add more information to the ToDo.txt file.
+Now suppose we add more information to the ToDo.txt file. Remember to save and exit the file in Nano by typing `CTRL + O` followed by `enter` and then `CTRL + X`.
 
 ~~~
 $ nano ToDo.txt
+~~~
+{: .bash}
+
+![Add extra lines to the existing file ToDo.txt](../fig/git-add-lines.png)
+
+~~~
 $ cat ToDo.txt
 ~~~
 {: .bash}
@@ -250,14 +264,14 @@ diff --git a/ToDo.txt b/ToDo.txt
 index 497e6b4..49e6774 100644
 --- a/ToDo.txt
 +++ b/ToDo.txt
-@@ -2,4 +2,5 @@ Conversion functions needed:
+@@ -3,4 +3,4 @@ Conversion functions needed:
 
  - Dollars to Cents
  - Gallons to Liters
--- Hours to Minutes
-\ No newline at end of file
-+- Hours to Minutes
+ - Hours to Minutes
+-
 +- Feet to Inches
+
 ~~~
 {: .output}
 
@@ -280,7 +294,6 @@ After reviewing our change, it's time to commit it:
 
 ~~~
 $ git commit -m "Add another desirable conversion tool"
-$ git status
 ~~~
 {: .bash}
 
@@ -349,13 +362,20 @@ To allow for this, Git has a special *staging area* where it keeps
 
 Let's watch as our changes to a file move from our editor
 to the staging area and into long-term storage.
-First, we'll add another line to the file:
+First, we'll add another line to the file. Remember to save and exit the file in Nano by typing `CTRL + O` followed by `enter` and then `CTRL + X`.
 
 ~~~
 $ nano ToDo.txt
+~~~
+{: .bash}
+
+![Add extra lines to the existing file ToDo.txt](../fig/git-add-more-lines.png)
+
+~~~
 $ cat ToDo.txt
 ~~~
 {: .bash}
+
 
 ~~~
 Conversion functions needed:
@@ -445,7 +465,10 @@ $ git status
 
 ~~~
 On branch master
+Your branch is ahead of 'origin/master' by 3 commits.
+  (use "git push" to publish your local commits)
 nothing to commit, working directory clean
+
 ~~~
 {: .output}
 

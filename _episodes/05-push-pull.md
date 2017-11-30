@@ -47,6 +47,9 @@ $ git push
 {: .bash}
 
 ~~~
+Username for 'https://github.com': <ENTER YOUR GITHUB USERNAME HERE>
+Password for 'https://vlad@github.com': <ENTER YOUR GITHUB PASSWORD HERE>
+
 Counting objects: 13, done.
 Delta compression using up to 24 threads.
 Compressing objects: 100% (13/13), done.
@@ -60,7 +63,8 @@ To https://github.com/biologyguy/conversions.git
 
 &nbsp;
 
-Now all of the changes have been uploaded to GitHub:
+If you refresh your browser showing your Github repository created earlier in the lesson, it will
+now show all of the changes that have been uploaded to GitHub:
 
 ![Creating a Repository on GitHub (Step 3)](../fig/github-changes-03.png)
 
