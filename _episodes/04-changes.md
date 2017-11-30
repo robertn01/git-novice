@@ -162,7 +162,13 @@ nothing to commit, working directory clean
 ~~~
 {: .output}
 
-it tells us everything is up to date.
+it tells us that our local repository is now differing from the
+origin (the repository from which we cloned this one, i.e. the original repository in Github)
+by one commit.
+
+It also tells us that we can use the `git push` command to send our commit to the original repo in 
+Github to syncronise these two repositories.
+
 If we want to know what we've done recently,
 we can ask Git to show us the project's history using `git log`:
 
