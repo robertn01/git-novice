@@ -264,13 +264,14 @@ diff --git a/ToDo.txt b/ToDo.txt
 index 497e6b4..49e6774 100644
 --- a/ToDo.txt
 +++ b/ToDo.txt
-@@ -2,4 +2,5 @@ Conversion functions needed:
+@@ -3,4 +3,4 @@ Conversion functions needed:
 
  - Dollars to Cents
  - Gallons to Liters
--- Hours to Minutes
-\ No newline at end of file
+ - Hours to Minutes
+-
 +- Feet to Inches
+
 ~~~
 {: .output}
 
