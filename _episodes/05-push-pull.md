@@ -47,6 +47,9 @@ $ git push
 {: .bash}
 
 ~~~
+Username for 'https://github.com': <ENTER YOUR GITHUB USERNAME HERE>
+Password for 'https://vlad@github.com': <ENTER YOUR GITHUB PASSWORD HERE>
+
 Counting objects: 13, done.
 Delta compression using up to 24 threads.
 Compressing objects: 100% (13/13), done.
