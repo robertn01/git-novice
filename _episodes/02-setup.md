@@ -5,12 +5,20 @@ exercises: 0
 questions:
 - "How do I get set up to use Git?"
 objectives:
+- Verify git is installed on a computer
 - "Configure `git` the first time it is used on a computer."
 - "Understand the meaning of the `--global` configuration flag."
 keypoints:
 -   "Use `git config` to configure a user name, email address, editor, and other preferences once per machine."
 ---
+## Installing Git
+If you're in a two-day Software Carpentry workshop, you've probably got Git already installed as part of the Bash / Git / Python or R installation process.
 
+If you're reviewing this lesson plan independently or as part of a single session workshop, you may need to install Git at this point.
+- [Github's Set Up Git instructions] (https://help.github.com/articles/set-up-git/) offer both command line and GUI options for Windows, Mac, and Linux systems. 
+- At minimum, we recommend installing a command line option and creating a free public GitHub account to work through this lesson.  
+
+## Configuring Git
 When we use Git on a new computer for the first time,
 we need to configure a few things. Below are a few examples
 of configurations we will set as we get started with Git:
