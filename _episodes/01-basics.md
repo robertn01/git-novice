@@ -64,10 +64,9 @@ across different computers facilitating collaboration among different people.
 > are *distributed*, meaning that they do not need a centralized server to host the repository.
 > These modern systems also include powerful merging tools that make it possible for multiple authors to work within
 > the same files concurrently.
-> 
 {: .callout}
 
-> ## Understanding the Core Concepts
+> ## Understanding Centralized vs. Distributed Version Control
 > There are two primary types of version control: Centralized and distributed. Centralized version control involves people 
 > taking turns writing to one central repository; distributed version control (like Git) allows people to make their own
 > branches and work on them separately, then reintegrate the pieces that should join the master branch.
