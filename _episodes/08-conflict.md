@@ -19,8 +19,16 @@ different changes to each copy.  Version control helps us manage these
 [conflicts]({{ page.root }}/reference/#conflicts) by giving us tools to
 [resolve]({{ page.root }}/reference/#resolve) overlapping changes.
 
+**The condensed version:**
+We've created lots of different versions of the same file by having each person change the contributors.txt file independently. 
+
+Let's take a look at how GitHub prompts us to merge these conflicting items.
+
+
+**The original version, if time permits:**
+
 To see how we can resolve conflicts, we must first create one.  The file
-`conversion.py` currently looks like this in both partners' copies of our `conversions`
+`conversion.py` currently looks like this (ed: or can be made to look like this) in both partners' copies of our `conversions`
 repository:
 
 ~~~
