@@ -28,16 +28,8 @@ $ pwd
 
 You should be in the subdirectory where you cloned your Git project.
 
-Next let's make sure Git knows we want to use this as a working directory:
-
-~~~
-$ git init
-~~~
-{: .bash}
-
-
-Let's create a file called `ToDo.txt` that contains some notes
-about the conversion tools we want. (We'll use `nano` to edit the file,
+Next let's create a file called `ToDo.txt` that contains some notes
+about the conversion tools we want to make. (We'll use `nano` to edit the file,
 but you can use whatever editor you like.)
 
 ~~~
