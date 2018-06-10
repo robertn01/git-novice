@@ -1,8 +1,8 @@
 git-novice
 ==========
 
-An introduction to version control for novices using Git.
-Please see <http://biologyguy.github.io/git-novice/> for a rendered version of this material,
+An introduction to version control for IT pros using Git, modified for the IT Pro Forum in June 2018.
+Please see <http://dlstrong.github.io/git-novice/> for a rendered version of this material,
 [the lesson template documentation][lesson-example]
 for instructions on formatting, building, and submitting material,
 or run `make` in this directory for a list of helpful commands.
