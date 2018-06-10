@@ -52,15 +52,17 @@ Make changes to the files in this repository the same way you would in
 
 ## Contributing to a repo via pull request
 
-Let's add a contribution to the repository we just pulled from.
+Let's add two contributions to the repository we just pulled from.
 
-In the web interface, select the **contributors.txt** file and edit it in the
-web interface to add your name to the list.
+In the web interface, select the **contributors.txt** file and edit it 
+to add your name to the list.
 
 ![Editing in the web interface](../fig/git-web-edit.png)
 
+Also make a new file that has your name on it, i.e. **yourname.txt.**
+
 You could now email the maintainer of the original repository to tell
- them about your update, and they could use
+ them about your updates, and they could use
  the unique hash identifier of your commit to pull those changes into
  their own code base, but GitHub makes the process much easier with
  **Pull Requests**.
