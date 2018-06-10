@@ -1,14 +1,14 @@
 ---
 title: Collaborating
 teaching: 25
-exercises: 0
+exercises: 30
 questions:
 - "How can I use version control to collaborate with other people?"
 objectives:
 - "Clone a remote repository."
 - "Collaborate pushing to a common repository."
 keypoints:
-- "`git clone` copies a remote repository to create a local repository with a remote called `origin` automatically set up."
+- "`git clone` copies a remote repository to create a local repository you can collaborate on."
 ---
 
 For the next step, get into pairs.  One person will be the "Owner" and the other
@@ -39,11 +39,11 @@ Next, the Collaborator needs to download a copy of the Owner's repository to her
 her `Desktop` folder, the Collaborator enters:
 
 ~~~
-$ git clone https://github.com/vlad/planets.git ~/Desktop/vlad-planets
+$ git clone https://github.com/vlad/Vlad-conversion.git
 ~~~
 {: .bash}
 
-Replace 'vlad' with the Owner's username.
+Replace the URL with the correct URL from the owner.
 
 ![After Creating Clone of Repository](../fig/github-collaboration.svg)
 
@@ -51,50 +51,51 @@ The Collaborator can now make a change in her clone of the Owner's repository,
 exactly the same way as we've been doing before:
 
 ~~~
-$ cd ~/Desktop/vlad-planets
-$ nano pluto.txt
-$ cat pluto.txt
+$ cd ~/Desktop/vlad-conversion
+$ nano conversion.py
+$ cat conversion.py
 ~~~
 {: .bash}
 
 ~~~
-It is so a planet!
+> > # My Conversion Tools
+> >
+> > def dollars2cents(dollars):
+> >     cents = dollars * 100
+> >     return cents
 ~~~
 {: .output}
 
 ~~~
-$ git add pluto.txt
-$ git commit -m "Some notes about Pluto"
+$ git add conversion.py
+$ git commit -m "Implement dollars2cents function"
 ~~~
 {: .bash}
 
 ~~~
- 1 file changed, 1 insertion(+)
- create mode 100644 pluto.txt
+ [master fc7397d] Implement dollars2cents function
+ 1 file changed, 2 insertions(+), 1 deletion(-)
 ~~~
 {: .output}
 
 Then push the change to the *Owner's repository* on GitHub:
 
 ~~~
-$ git push origin master
+$ git push
 ~~~
 {: .bash}
 
 ~~~
-Counting objects: 4, done.
-Delta compression using up to 4 threads.
-Compressing objects: 100% (2/2), done.
-Writing objects: 100% (3/3), 306 bytes, done.
-Total 3 (delta 0), reused 0 (delta 0)
-To https://github.com/vlad/planets.git
-   9272da5..29aba7c  master -> master
+Counting objects: 3, done.
+Delta compression using up to 24 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 335 bytes | 0 bytes/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local objects.
+To https://github.com/biologyguy/conversions.git
+   2e763f1..fc7397d  master -> master
 ~~~
 {: .output}
-
-Note that we didn't have to create a remote called `origin`: Git uses this
-name by default when we clone a repository.  (This is why `origin` was a
-sensible choice earlier when we were setting up remotes by hand.)
 
 Take a look to the Owner's repository on its GitHub website now (maybe you need
 to refresh your browser.) You should be able to see the new commit made by the
@@ -103,7 +104,7 @@ Collaborator.
 To download the Collaborator's changes from GitHub, the Owner now enters:
 
 ~~~
-$ git pull origin master
+$ git pull
 ~~~
 {: .bash}
 
@@ -116,8 +117,8 @@ From https://github.com/vlad/planets
  * branch            master     -> FETCH_HEAD
 Updating 9272da5..29aba7c
 Fast-forward
- pluto.txt | 1 +
- 1 file changed, 1 insertion(+)
+ conversion.py | 3 ++-
+ 1 file changed, 2 insertion(+), 1 deletion(-)
  create mode 100644 pluto.txt
 ~~~
 {: .output}
@@ -131,10 +132,10 @@ GitHub) are back in sync.
 > repository you are collaborating on, so you should `git pull` before making
 > our changes. The basic collaborative workflow would be:
 >
-> * update your local repo with `git pull origin master`,
+> * update your local repo with `git pull`,
 > * make your changes and stage them with `git add`,
 > * commit your changes with `git commit -m`, and
-> * upload the changes to GitHub with `git push origin master`
+> * upload the changes to GitHub with `git push`
 >
 > It is better to make many commits with smaller changes rather than
 > of one commit with massive changes: small commits are easier to
@@ -168,5 +169,5 @@ GitHub) are back in sync.
 >
 > Some backup software can keep a history of the versions of your files. They also
 > allows you to recover specific versions. How is this functionality different from version control?
-> What are some of the benifits of using version control, Git and Github?
+> What are some of the benefits of using version control, Git and GitHub?
 {: .challenge}

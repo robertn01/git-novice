@@ -1,7 +1,7 @@
 ---
 title: Ignoring Things
-teaching: 5
-exercises: 0
+teaching: 10
+exercises: 10
 questions:
 - "How can I tell Git to ignore files I don't want to track?"
 objectives:
@@ -13,7 +13,7 @@ keypoints:
 
 What if we have files that we do not want Git to track for us,
 like backup files created by our editor
-or intermediate files created during data analysis.
+or intermediate files created during data analysis?
 Let's create a few dummy files:
 
 ~~~
@@ -168,6 +168,9 @@ nothing to commit, working directory clean
 > > and create an exception for the `results/data/` folder.
 > > The next challenge will cover this type of solution.
 > >
+> > Sometimes the `**` pattern comes in handy, too, which matches
+> > multiple directory levels. E.g. `**/results/plots/*` would make git ignore
+> > the `results/plots` directory in any root directory.
 > {: .solution}
 {: .challenge}
 

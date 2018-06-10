@@ -76,7 +76,8 @@ the more open work is,
 [the more widely it is cited and re-used](http://dx.doi.org/10.1371/journal.pone.0000308).
 However,
 people who want to work this way need to make some decisions
-about what exactly "open" means and how to do it.
+about what exactly "open" means and how to do it. You can find more on the different aspects of Open Science 
+in [this book](http://link.springer.com/book/10.1007/978-3-319-00026-8).
 
 This is one of the (many) reasons we teach version control.
 When used diligently,
@@ -125,9 +126,9 @@ by acting as a shareable electronic lab notebook for computational work:
 > ## Can I Also Publish Code?
 >
 > There are many new ways to publish code and to make it citable. One
-> way is described [on the homepage of github itself](
+> way is described [on the homepage of GitHub itself](
 > https://guides.github.com/activities/citable-code/).
-> Basically it's a combination of github (where the code is) and zenodo (the
+> Basically it's a combination of GitHub (where the code is) and Zenodo (the
 > repository creating the DOI). Read through this page while being aware
 > that this is only one of many ways to making your code citable.
 {: .challenge}
