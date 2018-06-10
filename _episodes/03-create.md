@@ -10,12 +10,10 @@ keypoints:
 - "GitHub makes creating a new repository very easy."
 ---
 
-Once Git is configured, we can start using it. We are going to be looking
+Once Git is configured, we can start using it. We are going to start out looking
  at everything through the lens of [GitHub](https://github.com/), which
  is a highly popular online repository host that makes creating and
- managing repositories very easy. Be aware that everything we do
- on the website is also available from the command line, but we are going
- to gloss over most of those details during the workshop.
+ managing repositories very easy. 
 
 
 Open your web browser to [GitHub](https://github.com/) and log in (or
