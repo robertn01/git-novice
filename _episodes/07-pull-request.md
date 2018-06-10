@@ -69,8 +69,10 @@ You could now email the maintainer of the original repository to tell
 
 &nbsp;
 
-* The place you want to add information TO is the base. (In this case, it's the dlstrong version.)
-* The place you want to bring information FROM is the head. (In this case, it's your version.)
+You'll use the Base Fork and Head Fork buttons to choose what to send where. (If you don't see those options, look for a link that says "If you need to, you can also compare across forks.")
+
+* **Base fork:** The place you want to add information TO is the base fork. (In this case, it's the dlstrong version.)
+* **Head fork:** The place you want to bring information FROM is the head fork. (In this case, it's your version.)
 
 Compare the changes you want to add to your pull request and send it off.
 
