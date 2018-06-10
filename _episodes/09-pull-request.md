@@ -1,7 +1,7 @@
 ---
 title: Forks and Pull Requests
-teaching: 15
-exercises: 15
+teaching: 5
+exercises: 10
 questions:
 - "How do I contribute to repositories I have not been given permission
 to modify?"
