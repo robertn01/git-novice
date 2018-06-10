@@ -1,7 +1,7 @@
 ---
 title: Ignoring Things
-teaching: 10
-exercises: 10
+teaching: 0
+exercises: 0
 questions:
 - "How can I tell Git to ignore files I don't want to track?"
 objectives:
@@ -10,6 +10,7 @@ objectives:
 keypoints:
 - "The `.gitignore` file tells Git what files to ignore."
 ---
+(Note: We're likely going to skip this segment and possibly come back to this if time happens to permit, but basically you add things to .gitignore and that's pretty much it.)
 
 What if we have files that we do not want Git to track for us,
 like backup files created by our editor
