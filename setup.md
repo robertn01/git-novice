@@ -17,6 +17,7 @@ permalink: /setup/
   </p>
 </div> <!-- End of 'Git' section. -->
 
+<!-- Commenting out what won't be used in a lab with Python and Git already installed
 <div id="python"> <!-- Start of 'Python' section. Remove the third paragraph if
            the workshop will teach Python using something other than
            the IPython notebook.
@@ -164,3 +165,4 @@ conda install -c swc nano</pre>
     </div>
   </div>
 </div> <!-- End of 'shell' section. -->
+-->
