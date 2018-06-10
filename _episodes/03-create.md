@@ -1,6 +1,6 @@
 ---
 title: Creating a Repository
-teaching: 10
+teaching: 5
 exercises: 0
 questions:
 - "How can we create a new Git repository"
