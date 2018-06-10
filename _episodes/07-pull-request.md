@@ -14,25 +14,29 @@ keypoints:
 maintainer of the original repository merges your changes into theirs."
 ---
 
-There are no shortage of projects on GitHub, and you will not be able
- to modify those repositories unless the owner gives you permission.
- Usually, owners do not like to give permission to strangers, so instead
- rely on selectively pulling commits from a **forked** version of their
- primary repository.
+One of the strengths of open source software development is the ability to 
+have many contributors helping with the project. However, if you gave every
+contributor access to the same repository, it would be too easy for either
+mistakes or malice to cause problems for the whole repository. 
+
+GitHub helps solve this problem by allowing people to **fork** their own copy of a project,
+work on it in their own space, and submit a **pull request** to the original
+project in order to contribute without having to share too many permissions.
 
 ## Creating a fork
 
-To create a fork if your partner's repository, go to their GitHub page,
+To create a fork of the repository we'll be experimenting wit, go to https://github.com/dlstrong/swc-forklesson,
 select the repository, and click on the 'fork' button:
 
-![Forking repo (Step 1)](../fig/github-fork-01.png)
-
-&nbsp;
-
-Now clone the repository normally
+For the demonstration's sake, we can make all our edits through the web interface. However, when you're
+developing your own projects, you'll probably want a local working copy too. You can change to a directory that's
+different from your previous project and clone the repository normally:
 
 ~~~
-$ git clone https://your-fork-of-your-partners-repo
+$ cd ~
+$ mkdir forktest
+$ cd forktest
+$ git clone https://github.com/dlstrong/swc-forklesson.git
 ~~~
 {: .bash}
 
@@ -44,35 +48,15 @@ Make changes to the files in this repository the same way you would in
 
 ## Contributing to a repo via pull request
 
-Add another conversion tool to the growing list of functions in
- conversions.py
+Let's add a contribution to the repository we just pulled from.
 
-~~~
-# My Conversion Tools
+In the web interface, select the **contributors.txt** file and edit it in the
+web interface to add your name to the list.
 
-def dollars2cents(dollars):
-    cents = dollars * 100
-    return cents
-
-...
-
-def mole2atoms(mol):
-    atoms = mole * 6.02e23
-    return atoms
-~~~
-{: .python}
-
-Create a commit, and push it to GitHub.
-
-~~~
-$ git add conversion.py
-$ git commit -m "Add mole to atoms converter function"
-$ git push
-~~~
-{: .bash}
+![Editing in the web interface](../fig/git-web-edit.png)
 
 You could now email the maintainer of the original repository to tell
- them about the cool new function you've written, and they could use
+ them about your update, and they could use
  the unique hash identifier of your commit to pull those changes into
  their own code base, but GitHub makes the process much easier with
  **Pull Requests**.
@@ -80,6 +64,9 @@ You could now email the maintainer of the original repository to tell
 ![Forking repo (Step 1)](../fig/github-fork-02.png)
 
 &nbsp;
+
+* The place you want to add information TO is the base. (In this case, it's the dlstrong version.)
+* The place you want to bring information FROM is the head. (In this case, it's your version.)
 
 Compare the changes you want to add to your pull request and send it off
 
@@ -111,22 +98,8 @@ Accepting the request is as simple as hitting the green button, **BUT BE
 &nbsp;
 
 
-> ## Practice makes perfect
->
-> Fork your partner's repository and submit a pull request.
-> 
-> Also accept the pull request your partner has submitted.
-{: .challenge}
-
 > ## Be wary of the big green button
 >
 > Try to think of some reasons you may want to reject a pull request.
-{: .challenge}
-
-> ## Fork a public repo
->
-> Browse the [GitHub Showcase](https://github.com/showcases) and try
-> to find a repository that you think you might find useful (or that you 
-> may want to contribute to!). Fork it!
 {: .challenge}
 
