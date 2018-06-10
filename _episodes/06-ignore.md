@@ -3,7 +3,7 @@ title: Ignoring Things
 teaching: 0
 exercises: 0
 questions:
-- "How can I tell Git to ignore files I don't want to track?"
+- "How can I tell Git to ignore files I don't want to track? With .gitignore. (Skipping details for time)" 
 objectives:
 - "Configure Git to ignore specific files."
 - "Explain why ignoring files can be useful."
