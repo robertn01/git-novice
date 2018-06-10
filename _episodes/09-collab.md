@@ -1,9 +1,9 @@
 ---
-title: Collaborating
+title: Sharing one repository
 teaching: 25
 exercises: 30
 questions:
-- "How can I use version control to collaborate with other people?"
+- "How can I use version control to collaborate with other people in the same repository?"
 objectives:
 - "Clone a remote repository."
 - "Collaborate pushing to a common repository."
@@ -11,7 +11,7 @@ keypoints:
 - "`git clone` copies a remote repository to create a local repository you can collaborate on."
 ---
 
-For the next step, get into pairs.  One person will be the "Owner" and the other
+If time permits, for the next step, get into pairs.  One person will be the "Owner" and the other
 will be the "Collaborator". The goal is that the Collaborator add changes into
 the Owner's repository. We will switch roles at the end, so both persons will
 play Owner and Collaborator.
