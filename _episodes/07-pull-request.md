@@ -25,7 +25,7 @@ project in order to contribute without having to share too many permissions.
 
 ## Creating a fork
 
-To create a fork of the repository we'll be experimenting wit, go to https://github.com/dlstrong/swc-forklesson,
+To create a fork of the repository we'll be experimenting with, go to https://github.com/dlstrong/swc-forklesson,
 select the repository, and click on the 'fork' button:
 
 For the demonstration's sake, we can make all our edits through the web interface. However, when you're
@@ -39,6 +39,10 @@ $ cd forktest
 $ git clone https://github.com/dlstrong/swc-forklesson.git
 ~~~
 {: .bash}
+
+(**Why you want to change directories:** If you're still in the same directory you
+were just working in, that's where clone will put the new content too.
+The cloned project could get really entangled with what you were just working on!)
 
 Make changes to the files in this repository the same way you would in
  any other. This is now **your** copy of the code, to do whatever you
@@ -68,7 +72,11 @@ You could now email the maintainer of the original repository to tell
 * The place you want to add information TO is the base. (In this case, it's the dlstrong version.)
 * The place you want to bring information FROM is the head. (In this case, it's your version.)
 
-Compare the changes you want to add to your pull request and send it off
+Compare the changes you want to add to your pull request and send it off.
+
+(In the screen shots below, "deliciouslyevil" is the Dracula persona who's the repository maintainer
+used in Software Carpentry examples, and "biologyguy" is the contributor who's submitting Kristin's
+edits to the central collection.)
 
 ![Forking repo (Step 1)](../fig/github-fork-03.png)
 
