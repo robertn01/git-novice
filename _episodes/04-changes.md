@@ -17,6 +17,25 @@ keypoints:
 - "Always write a log message when committing changes."
 ---
 
+(Lecture break: I'll do a talk-through of the general concepts behind Git-style version control before we come back to hands-on work here.)
+
+First, let's make sure we're all in the subdirectory we want to work in:
+
+~~~
+$ pwd
+~~~
+{: .bash}
+
+You should be in the subdirectory where you cloned your Git project.
+
+Next let's make sure Git knows we want to use this as a working directory:
+
+~~~
+$ git init
+~~~
+{: .bash}
+
+
 Let's create a file called `ToDo.txt` that contains some notes
 about the conversion tools we want. (We'll use `nano` to edit the file,
 but you can use whatever editor you like.)
@@ -577,89 +596,6 @@ repository (`git commit`):
 > > 2. Would try to create a new repository.
 > > 3. Is correct: first add the file to the staging area, then commit.
 > > 4. Would try to commit a file "my recent changes" with the message myfile.txt.
-> {: .solution}
-{: .challenge}
-
-> ## Committing Multiple Files
->
-> The staging area can hold changes from any number of files
-> that you want to commit as a single snapshot.
->
-> 1. Add some text to `ToDo.txt` about how you want to implement all the conversion tools (One function? Many?)
-> 2. Create a new file `conversion.py` with an empty function in it (try just printing 'hello' for now)
-> 3. Add changes from both files to the staging area, and commit those changes
->
-> > ## Solution
-> >
-> > First we make our changes to the `ToDo.txt` and `conversion.py` files:
-> >
-> > ~~~
-> > $ nano ToDo.txt
-> > $ cat ToDo.txt
-> > ~~~
-> > {: .bash}
-> >
-> > ~~~
-> > Conversion functions needed:
-> > 
-> > - Dollars to Cents
-> > - Gallons to Liters
-> > - Hours to Minutes
-> > - Feet to Inches
-> > - Degrees to Radians
-> >
-> >
-> > Implemention
-> >
-> > Probably better to write different functions for each conversion,
-> > instead of handling all conversions in a single function
-> > ~~~
-> > {: .output}
-> >
-> > ~~~
-> > $ nano conversion.py
-> > $ cat conversion.py
-> > ~~~
-> > {: .bash}
-> >
-> > ~~~
-> > # My Conversion Tools
-> >
-> > def dollars2cents(dollars):
-> >     print("Hello!", dollars)
-> > ~~~
-> > {: .output}
-> >
-> > Now you can add both files to the staging area. We can do that in one line:
-> >
-> > ~~~
-> > $ git add ToDo.txt conversion.py
-> > ~~~
-> > {: .bash}
-> >
-> > Or with multiple commands:
-> >
-> > ~~~
-> > $ git add ToDo.txt
-> > $ git add conversion.py
-> > ~~~
-> > {: .bash}
-> >
-> > Now the files are ready to commit. You can check that using `git status`. 
-> > If you are ready to commit use:
-> >
-> > ~~~
-> > $ git commit -m "Implementation plan outlined"
-> > ~~~
-> > {: .bash}
-> >
-> > ~~~
-> > [master cc127c2]
-> > Implementation plan outlined
-> > 2 files changed, 10 insertions(+)
-> > ~~~
-> > {: .output}
-> >
 > {: .solution}
 {: .challenge}
 
