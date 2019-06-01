@@ -201,14 +201,7 @@ If you tell checkout which version you want from your local repository, it will 
 
 So if commit C3 is the latest, and commit A1 is two before that, then `git checkout HEAD~2 file` will get a copy of the A1 version of `file` and put it in your working directory, but leave the rest of your work at its current state:
 
-
-
-<p id="gdcalert4" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/Lesson-43.png). Store image on your image server and adjust path/filename if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert5">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](../fig/image4.png)
-
-
+![alt_text](../fig/image1.png)
 
 ### Working with entire commits
 
