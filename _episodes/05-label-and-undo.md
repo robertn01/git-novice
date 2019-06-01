@@ -13,7 +13,7 @@ keypoints:
 - "Tags are human-friendlier ways of identifying a specific commit. A tag stays with its commit and identifies one point in time."
 - "Branches are names that will move forward as you add more commits. Branches identify lines of thought or particular variations."
 - "`git checkout` brings specified versions into your working directory for investigation."
-- "`git checkout -b` creates a named branch during checkout so that you won't develop new code from a detached HEAD.
+- "`git checkout -b` creates a named branch during checkout so that you won't develop new code from a detached HEAD."
 - "`git reset` removes commits from your history."
 - "`git revert` makes a new commit that counteracts the commits you want to undo."
 - "Always write a log message when committing changes."
