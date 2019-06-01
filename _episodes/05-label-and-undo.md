@@ -423,7 +423,7 @@ I’d recommend using GitHub’s history features to explore past states when yo
 > {: .solution}
 {: .challenge}
 
-> ### Working at two points in time
+> ## Activity: Working at two points in time
 >
 > Let’s say you’re working on a bug fix that isn’t ready to go live yet, but someone needs a patch for something that is live right now.
 >
