@@ -422,42 +422,39 @@ I’d recommend using GitHub’s history features to explore past states when yo
 > {: .solution}
 {: .challenge}
 
-### Working at two points in time
-
-Let’s say you’re working on a bug fix that isn’t ready to go live yet, but someone needs a patch for something that is live right now.
-
-
-
-1. How would you save your current progress?
-2. How would you identify the current live state that you want to roll back to?
-3. How would you get that live state back for making the fix?
-4. How would you return to your current project?
-
-**Solutions:**
-
-(Select the “empty” lines below to reveal the solutions.)
-
-
-
-1. You can use the regular add-commit sequence to add your work to your active branch and make a new branch identity with `git checkout -b branchname`, or use `git stash` to make a temporary copy. (There are more options as well, but these are the two we’ve mentioned so far.) \
-
-2. This depends on how you’ve labeled your releases, whether your master/HEAD is always your current release or whether you use tags, other branches, or the GitHub.com release labeling system for identification. (Labeling your releases will make your life simpler than leaving notes to future-you in commit messages!) \
-
-3. After using `git status` to make sure you don’t have unsaved changes, you’ll want to `git checkout` the version you identified in step 2. \
- \
-If you used GitHub.com’s Release system to make a release with a tag, you’ll want to get that tag identity copied to your local repository before you use it to check out and make a branch for it: \
- \
-`git fetch --all --tags \
-git checkout tags/<tag_name> -b <branch_name>`
-4. After making your changes and committing them to that branch, you can use checkout to change back to your previous branch as well. \
- \
-If you were working in the master branch before, the command would be: \
- \
-`git checkout master`
-
-     (If you weren’t using master, substitute the name of the branch you were working in.)
-
-
+> ### Working at two points in time
+>
+> Let’s say you’re working on a bug fix that isn’t ready to go live yet, but someone needs a patch for something that is live right now.
+>
+>
+>
+> 1. How would you save your current progress?
+> 2. How would you identify the current live state that you want to roll back to?
+> 3. How would you get that live state back for making the fix?
+> 4. How would you return to your current project?
+> 
+> > ## Solutions:
+> >
+> > 1. You can use the regular add-commit sequence to add your work to your active branch and make a new branch identity with `git checkout -b branchname`, or use `git stash` to make a temporary copy. (There are more options as well, but these are the two we’ve mentioned so far.) \
+> >
+> > 2. This depends on how you’ve labeled your releases, whether your master/HEAD is always your current release or whether you use tags, other branches, or the GitHub.com release labeling system for identification. (Labeling your releases will make your life simpler than leaving notes to future-you in commit messages!) \
+> > 
+> > 3. After using `git status` to make sure you don’t have unsaved changes, you’ll want to `git checkout` the version you identified in step 2. 
+> >
+> > If you used GitHub.com’s Release system to make a release with a tag, you’ll want to get that tag identity copied to your local repository before you use it to check out and make a branch for it: \
+> >
+> > `git fetch --all --tags \
+> > git checkout tags/<tag_name> -b <branch_name>`
+> >
+> > 4. After making your changes and committing them to that branch, you can use checkout to change back to your previous branch as well. 
+> >
+> > If you were working in the master branch before, the command would be:
+> >
+> > `git checkout master`
+> >
+> >     (If you weren’t using master, substitute the name of the branch you were working in.)
+> {: .solution}
+{: .challenge}
 
 ## Revert and Reset
 
