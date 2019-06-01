@@ -152,7 +152,7 @@ Understanding the label methods will help you navigate your history in order to 
 
 Now that we have different ways of labeling things, we need to look at how to get hold of the piece you want in the way you want it. Remember that you have basically 4 different spaces in Git (before considering forks and branches as additional spaces):
 
-![alt_text](../fig/image2.png)
+![Working directory, stage, local repository, and remote repository](../fig/image2.png)
 
 Git commands can be used to reset each of these spaces with individual commits, individual tags, and/or individual branches. Here are some of the commands used to reset these spaces:
 
