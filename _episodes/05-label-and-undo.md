@@ -363,8 +363,6 @@ I’d recommend using GitHub’s history features to explore past states when yo
 > </table>
 >
 >
-> 
->
 > > ## Solutions:
 > > 
 > > 1 - A, C: The outcome of this command depends on whether word is a file name or a branch name. If it’s a file name, it gets that file from the staging area. If it’s a branch name, it checks out that branch.
@@ -426,8 +424,6 @@ I’d recommend using GitHub’s history features to explore past states when yo
 > ## Activity: Working at two points in time
 >
 > Let’s say you’re working on a bug fix that isn’t ready to go live yet, but someone needs a patch for something that is live right now.
->
->
 >
 > 1. How would you save your current progress?
 > 2. How would you identify the current live state that you want to roll back to?
