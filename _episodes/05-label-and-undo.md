@@ -41,8 +41,6 @@ Each of the versions could be developed independently of each other, or an updat
 
 So in order to be able to manage your versions like this, you need to be able to do four things:
 
-
-
 1. Identify which parts of the history you want to reuse (ideally, they’ll be labeled)
 2. Accurately get hold of those parts and bring them to your working space
 3. Update your work 
@@ -103,7 +101,7 @@ Tag \
 </table>
 
 
-So if I’ve just marked the 2018 version of gh-pages with tag ITPF-2018, then start adding new content to the gh-pages branch for this session, the gh-pages _branch _identity will still apply to the new content but the ITPF-2018 _tag _will not. 
+So if I’ve just marked the 2018 version of gh-pages with tag ITPF-2018, then start adding new content to the gh-pages branch for this session, the gh-pages _branch_ identity will still apply to the new content but the ITPF-2018 _tag_ will not. 
 
 Understanding the label methods will help you navigate your history in order to find the spot in time you want to return to and select the content you want to access.
 
@@ -116,7 +114,7 @@ In [https://github.com/dlstrong/git-novice/tree/gh-pages/_episodes](https://gith
 
 *   In some circumstances, switching to the **2015.08** branch returns an error message. In other circumstances it doesn’t. 
     *   Can you figure out the pattern? 
-*   Starting from [https://github.com/dlstrong/git-novice/tree/gh-pages/_episodes](https://github.com/dlstrong/git-novice/tree/gh-pages/_episodes)  again, under the **Branch:gh-pages **drop menu, go to the **Tags **section and pick **it-pro-forum-2018**.
+*   Starting from [https://github.com/dlstrong/git-novice/tree/gh-pages/_episodes](https://github.com/dlstrong/git-novice/tree/gh-pages/_episodes)  again, under the **Branch:gh-pages** drop menu, go to the **Tags** section and pick **it-pro-forum-2018**.
     *   What else changed about your view when you chose that tag?
 *   How would you examine the differences between my **patch-1** and my **gh-pages**?  \
 (Hint: There’s a Compare link on the right, below the History button.) 
