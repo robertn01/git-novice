@@ -449,7 +449,7 @@ I’d recommend using GitHub’s history features to explore past states when yo
 > >
 > > `git checkout master`
 > >
-> >     (If you weren’t using master, substitute the name of the branch you were working in.)
+> > (If you weren’t using master, substitute the name of the branch you were working in.)
 > {: .solution}
 {: .challenge}
 
