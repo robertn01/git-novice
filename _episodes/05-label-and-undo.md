@@ -58,12 +58,12 @@ Understanding the label methods will help you navigate your history in order to 
 > In [https://github.com/dlstrong/git-novice/tree/gh-pages/_episodes](https://github.com/dlstrong/git-novice/tree/gh-pages/_episodes), take a look at some of the different branches. Some of them will return 404 error messages.
 >
 > *   In some circumstances, switching to the **2015.08** branch returns an error message. In other circumstances it doesn’t. 
->    *   Can you figure out the pattern? 
+> * *   Can you figure out the pattern? 
 >
 > *   Starting from [https://github.com/dlstrong/git-novice/tree/gh-pages/_episodes](https://github.com/dlstrong/git-novice/tree/gh-pages/_episodes)  again, under the **Branch:gh-pages** drop menu, go to the **Tags** section and pick **it-pro-forum-2018**.
->    *   What else changed about your view when you chose that tag?
+> * *   What else changed about your view when you chose that tag?
 >
-> *   How would you examine the differences between my **patch-1** and my **gh-pages**?  \
+> *   How would you examine the differences between my **patch-1** and my **gh-pages**?  
 > (Hint: There’s a Compare link on the right, below the History button.) 
 >
 > *   How would you examine the differences between **my it-pro-forum-2018** and **biologyguy’s gh-pages**?
