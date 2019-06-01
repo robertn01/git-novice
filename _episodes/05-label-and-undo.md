@@ -29,7 +29,7 @@ However, for the Spring 2018 IT Pro Forum edition, I needed to fit the class int
 
 This year we have up to 3 hours for the introduction, so I’m adding in new information that wasn’t included in any previous Software Carpentry edition of Git (this page).
 
-In the future, I might want to add this page into a 4-hour edition of the class and take something else out. But the page you see at dlstrong.github.io/git-novice only displays the most recent thing in the “gh-pages” branch, meaning that if I want to show the 4-hour edition in the web page instead, I’d need to grab that version out of the repository history and copy it to the newest point in the gh-pages branch again.
+In the future, I might want to add this page into a 4-hour edition of the class and take something else out. But the page you see at https://dlstrong.github.io/git-novice only displays the most recent thing in the “gh-pages” branch, meaning that if I want to show the 4-hour edition in the web page instead, I’d need to grab that version out of the repository history and copy it to the newest point in the gh-pages branch again.
 
 At the time of this writing, my version of the lesson is “77 commits ahead and 564 commits behind” the Software Carpentry lesson, based on Steve Bond (biologyguy)’s particular fork rather than the main repository. That’s a lot of differences to go through and compare, if and when I’m trying to find this version later. So I use branching and tagging and releases to mark different editions that I can easily get hold of later. 
 
@@ -46,53 +46,7 @@ So in order to be able to manage your versions like this, you need to be able to
 3. Update your work 
 4. Put it back in the repository (and ideally label that version as well)
 
-There are several ways of labeling, depending on what you want to identify. In a nutshell, messages and tags stay with a particular commit; branch labels continue forward as progress on that branch proceeds.  Here’s a table:
-
-<table>
-  <tr>
-   <td>If I want to identify...
-   </td>
-   <td>“Permanent” label (fixed in time)
-   </td>
-   <td>“Floating” label (moves forward with progress)
-   </td>
-  </tr>
-  <tr>
-   <td>One specific file
-   </td>
-   <td><strong>Commit hash and file name</strong>
-   </td>
-   <td><strong>Branch and file name</strong>
-   </td>
-  </tr>
-  <tr>
-   <td>One commit (past or present)
-   </td>
-   <td><strong>Commit hash / Tag</strong> (<code>git tag -a <tagName> -m "tag message" <commit hash></code> )
-   </td>
-   <td><strong>Branch</strong>
-   </td>
-  </tr>
-  <tr>
-   <td>Specific selected files across commits / branches
-   </td>
-   <td><strong>File names within several commit hashes or tags</strong>
-   </td>
-   <td><strong>Branch(es)</strong>
-   </td>
-  </tr>
-  <tr>
-   <td>Whole repository in its current state
-   </td>
-   <td><strong>Tag </strong> ( <code>git tag -a <tagName> -m "tag message"</code> without a hash will label the most recent commit) 
-<strong>Release</strong> (like a tag with extra metadata)
-   </td>
-   <td><strong>Branch</strong>
-   </td>
-  </tr>
-</table>
-
----
+There are several ways of labeling, depending on what you want to identify. Messages and tags stay with a particular commit; branch labels continue forward as progress on that branch proceeds. 
 
 So if I’ve just marked the 2018 version of gh-pages with tag ITPF-2018, then start adding new content to the gh-pages branch for this session, the gh-pages _branch_ identity will still apply to the new content but the ITPF-2018 _tag_ will not. 
 
