@@ -386,7 +386,8 @@ I’d recommend using GitHub’s history features to explore past states when yo
 > {: .solution}
 {: .challenge}
 
-> ### Activity: Checking out an individual file
+
+> ## Activity: Checking out an individual file
 >
 > Let’s say you want to look at a past version of a particular file to see if that version works better for your needs. 
 >
@@ -403,7 +404,7 @@ I’d recommend using GitHub’s history features to explore past states when yo
 > {: .solution}
 {: .challenge}
 
->## Activity: Check out a tag or a hash
+> ## Activity: Check out a tag or a hash
 >
 > Check out something you’ve tagged, and look around your working directory. Then check out something by using its hash code. 
 >
