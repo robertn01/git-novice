@@ -199,7 +199,11 @@ This will bring the staged version of `file.txt` back into your working director
 
 If you tell checkout which version you want from your local repository, it will pull from that version rather than from the stage. To save commit lookup time, you can count how many versions back from your current HEAD pointer position you’d like to look -- for example,  HEAD~2 refers to two versions back from the latest commit in your currently active branch. 
 
-So if commit C3 is the latest, and commit A1 is two before that, then `git checkout HEAD~2 file` will get a copy of the A1 version of `file` and put it in your working directory, but leave the rest of your work at its current state:
+So if commit C3 is the latest, and commit A1 is two before that, then here's how to get a copy of the A1 version of `file` and put it in your working directory, but leave the rest of your work at its current state:
+
+```
+git checkout HEAD~2 file
+```
 
 ![alt_text](../fig/image1.png)
 
@@ -207,11 +211,9 @@ So if commit C3 is the latest, and commit A1 is two before that, then `git check
 
 If you decide that everything you’ve done since the last commit was a bad idea and you want to clear the decks and re-start from your last commit, you’d use this command to copy everything from commit C3 (the latest version and “HEAD” of the line) back into your working directory:
 
-
 ```
 git checkout HEAD
 ```
-
 
 In contrast, if you check out an entire commit that’s **older than the latest**, you’re probably going to want to name a branch while you do it to avoid developing in a detached HEAD state. (Just take my word for it right now. We’ll translate that into English later.)
 
@@ -222,22 +224,13 @@ In contrast, if you check out an entire commit that’s **older than the latest*
 git checkout <some-commit> -b <branchname>
 ```
 
-
 In this illustration, we’re getting version A1 by using HEAD~2 and naming the new branch BranchA during the checkout:
-
 
 ```
 git checkout HEAD~2 -b BranchA 
 ```
 
-
-
-
-<p id="gdcalert5" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/Lesson-44.png). Store image on your image server and adjust path/filename if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert6">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](../fig/image5.png)
-
+![alt_text](../fig/image8.png)
 
 Note the red Nope symbol over version C3 in the working directory? Those files will get overwritten with a checkout. 
 
