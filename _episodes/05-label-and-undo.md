@@ -48,7 +48,6 @@ So in order to be able to manage your versions like this, you need to be able to
 
 There are several ways of labeling, depending on what you want to identify. In a nutshell, messages and tags stay with a particular commit; branch labels continue forward as progress on that branch proceeds.  Here’s a table:
 
-
 <table>
   <tr>
    <td>If I want to identify...
@@ -69,9 +68,7 @@ There are several ways of labeling, depending on what you want to identify. In a
   <tr>
    <td>One commit (past or present)
    </td>
-   <td><strong>Commit hash
-Tag
-</strong> (<code>git tag -a <tagName> -m "tag message" <commit hash></code> )
+   <td><strong>Commit hash / Tag</strong> (<code>git tag -a <tagName> -m "tag message" <commit hash></code> )
    </td>
    <td><strong>Branch</strong>
    </td>
@@ -87,16 +84,15 @@ Tag
   <tr>
    <td>Whole repository in its current state
    </td>
-   <td><strong>Tag </strong>
-( <code>git tag -a <tagName> -m "tag message"</code> without a hash will label the most recent commit) 
-<strong>Release</strong>
-(like a tag with extra metadata)
+   <td><strong>Tag </strong> ( <code>git tag -a <tagName> -m "tag message"</code> without a hash will label the most recent commit) 
+<strong>Release</strong> (like a tag with extra metadata)
    </td>
    <td><strong>Branch</strong>
    </td>
   </tr>
 </table>
 
+---
 
 So if I’ve just marked the 2018 version of gh-pages with tag ITPF-2018, then start adding new content to the gh-pages branch for this session, the gh-pages _branch_ identity will still apply to the new content but the ITPF-2018 _tag_ will not. 
 
