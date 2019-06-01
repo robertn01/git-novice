@@ -53,8 +53,7 @@ There are several ways of labeling, depending on what you want to identify. In a
   <tr>
    <td>If I want to identify...
    </td>
-   <td>“Permanent” label  \
-(fixed in time)
+   <td>“Permanent” label (fixed in time)
    </td>
    <td>“Floating” label (moves forward with progress)
    </td>
@@ -70,8 +69,8 @@ There are several ways of labeling, depending on what you want to identify. In a
   <tr>
    <td>One commit (past or present)
    </td>
-   <td><strong>Commit hash \
-Tag \
+   <td><strong>Commit hash
+Tag
 </strong> (<code>git tag -a <tagName> -m "tag message" <commit hash></code> )
    </td>
    <td><strong>Branch</strong>
@@ -80,8 +79,7 @@ Tag \
   <tr>
    <td>Specific selected files across commits / branches
    </td>
-   <td><strong>File names within several commit hashes or tags</strong> \
-
+   <td><strong>File names within several commit hashes or tags</strong>
    </td>
    <td><strong>Branch(es)</strong>
    </td>
@@ -89,10 +87,9 @@ Tag \
   <tr>
    <td>Whole repository in its current state
    </td>
-   <td><strong>Tag </strong> \
+   <td><strong>Tag </strong>
 ( <code>git tag -a <tagName> -m "tag message"</code> without a hash will label the most recent commit) 
-<p>
-<strong>Release</strong> \
+<strong>Release</strong>
 (like a tag with extra metadata)
    </td>
    <td><strong>Branch</strong>
