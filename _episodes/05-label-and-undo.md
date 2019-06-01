@@ -1,77 +1,23 @@
-<!----- Conversion time: 5.483 seconds.
-
-
-Using this Markdown file:
-
-1. Cut and paste this output into your source file.
-2. See the notes and action items below regarding this conversion run.
-3. Check the rendered output (headings, lists, code blocks, tables) for proper
-   formatting and use a linkchecker before you publish this page.
-
-Conversion notes:
-
-* Docs to Markdown version 1.0β17
-* Fri May 31 2019 19:19:59 GMT-0700 (PDT)
-* Source doc: https://docs.google.com/open?id=1jYAC19-E-jcoIeho-xuTsJktR7XOvgQWWbCWIu_48Gw
-* This document has images: check for >>>>>  gd2md-html alert:  inline image link in generated source and store images to your server.
------>
-
-
-<p style="color: red; font-weight: bold">>>>>>  gd2md-html alert:  ERRORs: 0; WARNINGs: 0; ALERTS: 10.</p>
-<ul style="color: red; font-weight: bold"><li>See top comment block for details on ERRORs and WARNINGs. <li>In the converted Markdown or HTML, search for inline alerts that start with >>>>>  gd2md-html alert:  for specific instances that need correction.</ul>
-
-<p style="color: red; font-weight: bold">Links to alert messages:</p><a href="#gdcalert1">alert1</a>
-<a href="#gdcalert2">alert2</a>
-<a href="#gdcalert3">alert3</a>
-<a href="#gdcalert4">alert4</a>
-<a href="#gdcalert5">alert5</a>
-<a href="#gdcalert6">alert6</a>
-<a href="#gdcalert7">alert7</a>
-<a href="#gdcalert8">alert8</a>
-<a href="#gdcalert9">alert9</a>
-<a href="#gdcalert10">alert10</a>
-
-<p style="color: red; font-weight: bold">>>>>> PLEASE check and correct alert issues and delete this message and the inline alerts.<hr></p>
-
-
-
-## 
-Overview
-
-
-<table>
-  <tr>
-   <td>Teaching: 20 min 
-<p>
-Exercises: 20 min
-   </td>
-   <td>Questions
-<ul>
-
-<li>How do I label versions in git?
-
-<li>How do I examine different versions and change between them?
-
-<li>How do I roll back to a previous state I want and continue a different way?
-</li>
-</ul>
-   </td>
-  </tr>
-  <tr>
-   <td>
-   </td>
-   <td>Objectives
-<ul>
-
-<li>Understand how to name specific elements for easier access later
-
-<li>Understand how to get back older versions of your work
-</li>
-</ul>
-   </td>
-  </tr>
-</table>
-
+---
+title: Labeling Things and Undoing Things
+teaching: 20
+exercises: 20
+questions:
+- "How do I label versions in git?"
+- "How do I examine different versions and change between them?"
+- "How do I roll back to a previous state I want and continue a different way?"
+objectives:
+- "Understand how to name specific elements for easier access later."
+- "Understand how to get back older versions of your work."
+keypoints:
+- Tags are human-friendlier ways of identifying a specific commit. A tag stays with its commit and identifies one point in time.
+- Branches are names that will move forward as you add more commits. Branches identify lines of thought or particular variations.
+- "`git checkout` brings specified versions into your working directory for investigation."
+- "`git checkout -b` creates a named branch during checkout so that you won't develop new code from a detached HEAD.
+- "`git reset` removes commits from your history."
+- "`git revert` makes a new commit that counteracts the commits you want to undo."
+- "Always write a log message when committing changes."
+---
 
 Two of the key elements of version control are being able to get back to a previous version when you want it, and being able to try out different options from whatever point you’d like to revisit.
 
