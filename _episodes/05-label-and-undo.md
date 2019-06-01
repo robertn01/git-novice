@@ -291,146 +291,138 @@ If you’re working under a detached HEAD that’s not pointing at the latest it
 I’d recommend using GitHub’s history features to explore past states when you can, and checking out into named branches to avoid chaos when you need to make changes starting from past states.
 
 
-## Activity: Checking out different units
+> ## Activity: Checking out different units
+>
+>
+> ### Quiz: Understanding the syntax
+>
+> Pair up numbers and letters to identify which checkout command is used for which purposes. (Some of them can have more than one answer, and some answers can be used more than once.)
+>
+>
+> <table>
+>  <tr>
+>   <td>Command
+>   </td>
+>   <td>Purpose
+>   </td>
+>  </tr>
+>  <tr>
+>   <td>(1) git checkout word
+>   </td>
+>     <td>(a) If “word” is a branch name, this command creates a new branch with that name.  
+>     </td>
+>    </tr>
+>    <tr>
+>     <td>(2) git checkout -b word
+>     </td>
+>     <td>(b) This command checks out the most recent commit in the branch you’re working on.
+>     </td>
+>    </tr>
+>    <tr>
+>     <td>(3) git checkout -b HEAD
+>   </td>
+>   <td>(c) If “word” is a branch name, this command changes your working directory to the most recent commit in that branch.
+>   </td>
+>  </tr>
+>  <tr>
+>   <td>(4) git checkout HEAD
+>   </td>
+>   <td>(d) If “word” is a file name, this command gets that file from the staging area.
+>   </td>
+>  </tr>
+>  <tr>
+>   <td>(5) git checkout HEAD word
+>   </td>
+>   <td>(e) If “word” is a branch name, this command checks out the second most recent commit and makes a new branch with that name. 
+>   </td>
+>  </tr>
+>  <tr>
+>   <td>(6) git checkout HEAD~1 
+>   </td>
+>   <td>(f) If “word” is a file name, this command checks out the version of that specific file from the commit you identified.
+>   </td>
+>  </tr>
+>  <tr>
+>   <td>(7) git checkout HEAD~1 -b word
+>   </td>
+>   <td>(g) This command checks out the second most recent commit in the branch 
+>   </td>
+>  </tr>
+>  <tr>
+>   <td>(8) git checkout HEAD~1 word
+>   </td>
+>   <td>(h) This command makes a new branch with your current working directory.
+>   </td>
+>  </tr>
+>  <tr>
+>   <td>
+>   </td>
+>   <td>(i) You probably don’t want to do this.
+>   </td>
+>  </tr>
+> </table>
+>
+>
+> 
+>
+> > ##Solutions:
+> > 
+> > 1 - A, C: The outcome of this command depends on whether word is a file name or a branch name. If it’s a file name, it gets that file from the staging area. If it’s a branch name, it checks out that branch.
+> > 
+> > 2 - H
+> > 
+> > 3 - I: You probably don’t want to create a new branch called HEAD. That way lies madness.
+> > 
+> > 4 - B
+> > 
+> > 5 - F If “word” is a file name, checkout gets that file from the current HEAD of your branch, whether or not the head is detached. If “word” is a branch name, you might get a syntax error. 
+> > 
+> > 6 - G, I: This is legal syntax but puts you in a detached HEAD state. You can use this to look around, but you probably don’t want to do this if you’re planning to develop from HEAD~1. Give it a branch name with -b to develop from here.
+> > 
+> > 7 - E
+> > 
+> > 8 - F
+> > 
+> {: .solution}
+{: .challenge}
 
+> ### Activity: Checking out an individual file
+>
+> Let’s say you want to look at a past version of a particular file to see if that version works better for your needs. 
+>
+> 1. How would you identify which version of the file you want?
+> 2. How would you tell git to bring that version back?
+> 
+> > **Solutions:**
+> > 
+> > 1. On the command line, you can use `git log` and `git diff` to inspect commit history and messages. On GitHub.com, the History and Compare options can help you navigate past versions and compare them to each other. 
+> > 
+> > 2. If the version you want is on the stage but not in a commit, `git checkout <filename>` will get the staged version for you.  
+> > If it’s recent enough to count the commits back, `git checkout HEAD~# <filename>` will select the version placed # of commits before the current one.
+> > If it’s further than you want to count, or if you have the commit hash ID or a tag handy, `git checkout <tag or hash>/<identifier> <filename>` will get that version.
+> {: .solution}
+{: .challenge}
 
-### Quiz: Understanding the syntax
-
-Pair up numbers and letters to identify which checkout command is used for which purposes. (Some of them can have more than one answer, and some answers can be used more than once.)
-
-
-<table>
-  <tr>
-   <td>Command
-   </td>
-   <td>Purpose
-   </td>
-  </tr>
-  <tr>
-   <td>(1) git checkout word
-   </td>
-   <td>(a) If “word” is a branch name, this command creates a new branch with that name.  
-   </td>
-  </tr>
-  <tr>
-   <td>(2) git checkout -b word
-   </td>
-   <td>(b) This command checks out the most recent commit in the branch you’re working on.
-   </td>
-  </tr>
-  <tr>
-   <td>(3) git checkout -b HEAD
-   </td>
-   <td>(c) If “word” is a branch name, this command changes your working directory to the most recent commit in that branch.
-   </td>
-  </tr>
-  <tr>
-   <td>(4) git checkout HEAD
-   </td>
-   <td>(d) If “word” is a file name, this command gets that file from the staging area.
-   </td>
-  </tr>
-  <tr>
-   <td>(5) git checkout HEAD word
-   </td>
-   <td>(e) If “word” is a branch name, this command checks out the second most recent commit and makes a new branch with that name. 
-   </td>
-  </tr>
-  <tr>
-   <td>(6) git checkout HEAD~1 
-   </td>
-   <td>(f) If “word” is a file name, this command checks out the version of that specific file from the commit you identified.
-   </td>
-  </tr>
-  <tr>
-   <td>(7) git checkout HEAD~1 -b word
-   </td>
-   <td>(g) This command checks out the second most recent commit in the branch 
-   </td>
-  </tr>
-  <tr>
-   <td>(8) git checkout HEAD~1 word
-   </td>
-   <td>(h) This command makes a new branch with your current working directory.
-   </td>
-  </tr>
-  <tr>
-   <td>
-   </td>
-   <td>(i) You probably don’t want to do this.
-   </td>
-  </tr>
-</table>
-
-
- 
-
-**Solutions:**
-
-1 - A, C: The outcome of this command depends on whether word is a file name or a branch name. If it’s a file name, it gets that file from the staging area. If it’s a branch name, it checks out that branch.
-
-2 - H
-
-3 - I: You probably don’t want to create a new branch called HEAD. That way lies madness.
-
-4 - B
-
-5 - F If “word” is a file name, checkout gets that file from the current HEAD of your branch, whether or not the head is detached. If “word” is a branch name, you might get a syntax error. 
-
-6 - G, I: This is legal syntax but puts you in a detached HEAD state. You can use this to look around, but you probably don’t want to do this if you’re planning to develop from HEAD~1. Give it a branch name with -b to develop from here.
-
-7 - E
-
-8 - F
-
-
-### Activity: Checking out an individual file
-
-Let’s say you want to look at a past version of a particular file to see if that version works better for your needs. 
-
-
-
-1. How would you identify which version of the file you want?
-2. How would you tell git to bring that version back?
-
-**Solutions:**
-
-
-
-1. On the command line, you can use `git log` and `git diff` to inspect commit history and messages. On GitHub.com, the History and Compare options can help you navigate past versions and compare them to each other. \
-
-2. If the version you want is on the stage but not in a commit, `git checkout <filename>` will get the staged version for you.  \
- \
-If it’s recent enough to count the commits back, `git checkout HEAD~# <filename>` will select the version placed # of commits before the current one.  \
- \
-If it’s further than you want to count, or if you have the commit hash ID or a tag handy, `git checkout <tag or hash>/<identifier> <filename>` will get that version.
-
-
-### Activity: Check out a tag or a hash
-
-Check out something you’ve tagged, and look around your working directory. Then check out something by using its hash code. 
-
-When you’re done, change back to the master branch with: `git checkout master`
-
-**Solutions:**
-
-
-```
-git checkout tags/<tagname>
-```
-
-
-and
-
-
-```
-git checkout hash/<hashcode>
-```
-
-
- \
-will tell git what type of labeling item you’re looking for. 
-
+>## Activity: Check out a tag or a hash
+>
+> Check out something you’ve tagged, and look around your working directory. Then check out something by using its hash code. 
+>
+> When you’re done, change back to the master branch with: `git checkout master`
+>
+> > **Solutions:**
+> > 
+> > 
+> > ```
+> > git checkout tags/<tagname>
+> > ```
+> > 
+> > and
+> > ```
+> > git checkout hash/<hashcode>
+> > ```
+> > will tell git what type of labeling item you’re looking for. 
+> {: .solution}
+{: .challenge}
 
 ### Working at two points in time
 
