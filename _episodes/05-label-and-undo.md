@@ -180,11 +180,9 @@ Git checkout can be used on individual files, particular commits, or entire bran
 
 To look at a particular version of a specific file, you include the file name (and/or its path as needed for disambiguation) in the command. This brings that version of the file into your working directory:
 
-
 ```
 git checkout <description of which version> <filename>
 ```
-
 
 If you don’t tell it which version of a file you want, it assumes you want to get the version in your **staging area**:
 
@@ -193,15 +191,10 @@ If you don’t tell it which version of a file you want, it assumes you want to 
 git checkout file.txt 
 ```
 
-
 This will bring the staged version of `file.txt` back into your working directory.
 
 
-
-<p id="gdcalert3" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/Lesson-42.png). Store image on your image server and adjust path/filename if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert4">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](../fig/image8.png)
+![alt_text](../fig/image9.png)
 
 
 If you tell checkout which version you want from your local repository, it will pull from that version rather than from the stage. To save commit lookup time, you can count how many versions back from your current HEAD pointer position you’d like to look -- for example,  HEAD~2 refers to two versions back from the latest commit in your currently active branch. 
