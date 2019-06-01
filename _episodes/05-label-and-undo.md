@@ -113,56 +113,46 @@ Understanding the label methods will help you navigate your history in order to 
 > *   Between Software Carpentry’s instance, biologyguy’s instance, and my instance, how would you identify the difference between what’s called a **fork**, what’s called a **branch**, and what’s called a **tag**? (Bonus points for explaining when and why you would use each.)
 {: .challenge}
 
-## Activity: Tags
-
-Let’s create some tags now, then make more changes so that you can grab that label as one of the options for later rolling-back. 
-
-On the command line, you can apply tags at any stage of development and to the whole repository or to individual commits within a repository. On GitHub.com, you can only create tags when you create releases, but you can navigate with tags that were created by the command line and pushed to the remote repository.
-
-
-### Tagging your current state
-
-What command would you use to tag things as they are right now?
-
-(Name it something like v0.5.0. The table earlier in the lesson can help.)
-
-**Solution:**
-
- `git tag -a v0.5.0 -m "I think we're halfway to a release"`
-
-
-### Tagging a couple of past commits
-
-Sometimes you don’t realize how significant something will be until later on. Let’s say we want to mark a version 0.2.0 as well.  \
- \
-Use GitHub interface’s History button to identify two earlier commits. (For example, [https://github.com/dlstrong/git-novice/commits/gh-pages/_episodes](https://github.com/dlstrong/git-novice/commits/gh-pages/_episodes) shows several commits on June 10, 2018 that could be selected. Your version history and hashes will be different.)
-
-
-
-1. Use the clipboard button beside the hash code to copy it.
-2. On the command line, use `git tag` to apply the tag “v0.2.0” to a commit you selected. (The table above can be used for reference.)
-
-**Solution:**
-
-
-```
-git tag -a v0.2.0 -m "This may be useful later" <commit hash>
-```
-
-
-(Substitute the actual hashes, and don’t put angle brackets around them.)
-
+> ## Activity: Tags
+>
+> Let’s create some tags now, then make more changes so that you can grab that label as one of the options for later rolling-back. 
+>
+> On the command line, you can apply tags at any stage of development and to the whole repository or to individual commits within a repository. On GitHub.com, you can only create tags when you create releases, but you can navigate with tags that were created by the command line and pushed to the remote repository.
+>
+>
+> ### Tagging your current state
+>
+> What command would you use to tag things as they are right now?
+>
+> (Name it something like v0.5.0. The table earlier in the lesson can help.)
+>
+> > ## Solution:
+> >
+> > `git tag -a v0.5.0 -m "I think we're halfway to a release"`
+> {: .solution}
+> 
+> ### Tagging a couple of past commits
+>
+> Sometimes you don’t realize how significant something will be until later on. Let’s say we want to mark a version 0.2.0 as well. 
+> Use GitHub interface’s History button to identify two earlier commits. (For example, [https://github.com/dlstrong/git-novice/commits/gh-pages/_episodes](https://github.com/dlstrong/git-novice/commits/gh-pages/_episodes) shows several commits on June 10, 2018 that could be selected. Your version history and hashes will be different.)
+>
+>
+>
+> 1. Use the clipboard button beside the hash code to copy it.
+> 2. On the command line, use `git tag` to apply the tag “v0.2.0” to a commit you selected. (The table above can be used for reference.)
+>
+> > ## Solution:
+> >
+> > `git tag -a v0.2.0 -m "This may be useful later" <commit hash>`
+> > (Substitute the actual hashes, and don’t put angle brackets around them.)
+> {: .solution}
+{: .challenge}
 
 ## Grabbing a specific version from different levels of storage
 
 Now that we have different ways of labeling things, we need to look at how to get hold of the piece you want in the way you want it. Remember that you have basically 4 different spaces in Git (before considering forks and branches as additional spaces):
 
-
-
-<p id="gdcalert2" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/Lesson-41.png). Store image on your image server and adjust path/filename if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert3">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/Lesson-41.png "image_tooltip")
+![alt_text](../fig/Lesson-41.png)
 
 
 Git commands can be used to reset each of these spaces with individual commits, individual tags, and/or individual branches. Here are some of the commands used to reset these spaces:
