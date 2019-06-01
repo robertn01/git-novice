@@ -481,12 +481,7 @@ or
 `git reset A1`  \
 (implies `git reset --mixed HEAD~2 `or `A1`)
 
-
-
-<p id="gdcalert7" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/Lesson-46.png). Store image on your image server and adjust path/filename if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert8">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](../fig/image7.png)
+![alt_text](../fig/image4.png)
 
 
  If you want to entirely clear the decks and make your working directory match your reset point as well, you want:
