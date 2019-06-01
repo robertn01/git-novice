@@ -365,7 +365,7 @@ I’d recommend using GitHub’s history features to explore past states when yo
 >
 > 
 >
-> > ##Solutions:
+> > ## Solutions:
 > > 
 > > 1 - A, C: The outcome of this command depends on whether word is a file name or a branch name. If it’s a file name, it gets that file from the staging area. If it’s a branch name, it checks out that branch.
 > > 
@@ -393,7 +393,7 @@ I’d recommend using GitHub’s history features to explore past states when yo
 > 1. How would you identify which version of the file you want?
 > 2. How would you tell git to bring that version back?
 > 
-> > **Solutions:**
+> > ## Solutions:
 > > 
 > > 1. On the command line, you can use `git log` and `git diff` to inspect commit history and messages. On GitHub.com, the History and Compare options can help you navigate past versions and compare them to each other. 
 > > 
@@ -409,13 +409,11 @@ I’d recommend using GitHub’s history features to explore past states when yo
 >
 > When you’re done, change back to the master branch with: `git checkout master`
 >
-> > **Solutions:**
-> > 
+> > ## Solutions:
 > > 
 > > ```
 > > git checkout tags/<tagname>
 > > ```
-> > 
 > > and
 > > ```
 > > git checkout hash/<hashcode>
