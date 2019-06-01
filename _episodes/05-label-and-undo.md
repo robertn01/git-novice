@@ -10,7 +10,7 @@ objectives:
 - "Understand how to name specific elements for easier access later."
 - "Understand how to get back older versions of your work."
 keypoints:
-- "Tags are human-friendlier ways of identifying a specific commit. A tag stays with its commit and identifies one point in time."
+- "Tags are human-friendlier ways of identifying a specific commit than hexadecimal codes. A tag stays with its commit and identifies one point in time."
 - "Branches are names that will move forward as you add more commits. Branches identify lines of thought or particular variations."
 - "`git checkout` brings specified versions into your working directory for investigation."
 - "`git checkout -b` creates a named branch during checkout so that you won't develop new code from a detached HEAD."
@@ -201,7 +201,7 @@ This will bring the staged version of `file.txt` back into your working director
 <p id="gdcalert3" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/Lesson-42.png). Store image on your image server and adjust path/filename if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert4">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
 
-![alt_text](images/Lesson-42.png "image_tooltip")
+![alt_text](../fig/image3.png)
 
 
 If you tell checkout which version you want from your local repository, it will pull from that version rather than from the stage. To save commit lookup time, you can count how many versions back from your current HEAD pointer position you’d like to look -- for example,  HEAD~2 refers to two versions back from the latest commit in your currently active branch. 
@@ -213,7 +213,7 @@ So if commit C3 is the latest, and commit A1 is two before that, then `git check
 <p id="gdcalert4" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/Lesson-43.png). Store image on your image server and adjust path/filename if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert5">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
 
-![alt_text](images/Lesson-43.png "image_tooltip")
+![alt_text](../fig/image4.png)
 
 
 
@@ -250,7 +250,7 @@ git checkout HEAD~2 -b BranchA
 <p id="gdcalert5" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/Lesson-44.png). Store image on your image server and adjust path/filename if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert6">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
 
-![alt_text](images/Lesson-44.png "image_tooltip")
+![alt_text](../fig/image5.png)
 
 
 Note the red Nope symbol over version C3 in the working directory? Those files will get overwritten with a checkout. 
@@ -272,7 +272,7 @@ In the images below from Atlassian’s tutorial, we’re switching from the mast
 <p id="gdcalert6" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/Lesson-45.png). Store image on your image server and adjust path/filename if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert7">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
 
-![alt_text](images/Lesson-45.png "image_tooltip")
+![alt_text](../fig/image6.png)
 
 
 When you’re done working with the hotfix branch and have added and committed your change there, you can go back to the main branch by telling it that you want to check out “master” again:
@@ -549,7 +549,7 @@ or
 <p id="gdcalert7" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/Lesson-46.png). Store image on your image server and adjust path/filename if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert8">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
 
-![alt_text](images/Lesson-46.png "image_tooltip")
+![alt_text](../fig/image7.png)
 
 
  If you want to entirely clear the decks and make your working directory match your reset point as well, you want:
@@ -569,7 +569,7 @@ git reset --hard A1
 <p id="gdcalert8" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/Lesson-47.png). Store image on your image server and adjust path/filename if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert9">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
 
-![alt_text](images/Lesson-47.png "image_tooltip")
+![alt_text](../fig/image8.png)
 
 
 
@@ -620,7 +620,7 @@ git revert HEAD~1
 <p id="gdcalert9" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/Lesson-48.png). Store image on your image server and adjust path/filename if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert10">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
 
-![alt_text](images/Lesson-48.png "image_tooltip")
+![alt_text](../fig/image9.png)
 
 
 If you want to revert everything since commit A1, you need to designate each commit to undo:
@@ -638,7 +638,7 @@ or
 <p id="gdcalert10" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/Lesson-49.png). Store image on your image server and adjust path/filename if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert11">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
 
-![alt_text](images/Lesson-49.png "image_tooltip")
+![alt_text](../fig/image10.png)
 
 
 
