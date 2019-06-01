@@ -194,7 +194,7 @@ git checkout file.txt
 This will bring the staged version of `file.txt` back into your working directory.
 
 
-![alt_text](../fig/image9.png)
+![file.txt moving from stage into your working directory, independent of any commit ID](../fig/image9.png)
 
 
 If you tell checkout which version you want from your local repository, it will pull from that version rather than from the stage. To save commit lookup time, you can count how many versions back from your current HEAD pointer position you’d like to look -- for example,  HEAD~2 refers to two versions back from the latest commit in your currently active branch. 
@@ -205,7 +205,7 @@ So if commit C3 is the latest, and commit A1 is two before that, then here's how
 git checkout HEAD~2 file
 ```
 
-![alt_text](../fig/image1.png)
+![Getting A1's copy of file and moving it to the working directory](../fig/image1.png)
 
 ### Working with entire commits
 
@@ -230,7 +230,7 @@ In this illustration, we’re getting version A1 by using HEAD~2 and naming the 
 git checkout HEAD~2 -b BranchA 
 ```
 
-![alt_text](../fig/image8.png)
+![Creating BranchA and naming it while checking out a commit 2 older than the most recent](../fig/image8.png)
 
 Note the red Nope symbol over version C3 in the working directory? Those files will get overwritten with a checkout. 
 
@@ -238,72 +238,47 @@ If you want to save your changes temporarily -- or if Git gives you a warning th
 
 **If you already have a branch,** and you want to update your working directory to work on that branch, the command looks like this:
 
-
 ```
 git checkout <branchname>
 ```
 
-
 In the images below from Atlassian’s tutorial, we’re switching from the master branch to the hotfix branch by using `git checkout hotfix`:
 
-
-
-<p id="gdcalert6" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/Lesson-45.png). Store image on your image server and adjust path/filename if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert7">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](../fig/image6.png)
-
+![Checking out the hotfix branch and moving the HEAD pointer](../fig/image6.png)
 
 When you’re done working with the hotfix branch and have added and committed your change there, you can go back to the main branch by telling it that you want to check out “master” again:
-
 
 ```
 git checkout master
 ```
 
-
-
 ### Checking out tags and specific hashes
 
 Remember the version 0.2.0 and 0.5.0 tags we made in the earlier activity? You can check out tagged versions by telling Git that the identifying word you use is a tag name rather than a branch name:
 
-
 ```
 git checkout tags/v0.2.0
 ```
-
-
 or 
-
-
 ```
 git checkout tags/itpf2019
 ```
 
-
- \
 You can get a list of tag names in the GitHub.com interface or with the `git tag` command on the command line. 
 
 (If your tag names and branch names are entirely different, you could also do `git checkout v0.2.0` without specifying tags/. However, if you don’t specify what type of label you mean, `git checkout`’s first guess is that you mean a branch name.)
 
 If the hash for a particular commit is more readily available than the tag name or how far back in a branch the particular version is, you can also check out via hash code:
 
-
 ```
 git checkout hash/a1b2c3d
 ```
-
-
 or
-
-
 ```
 git checkout a1b2c3d
 ```
 
-
 (Generally speaking, your tag and branch names shouldn’t be the same as a hash, so you probably won’t need to tell git which type of identifier you’re using here.)
-
 
 ### Detached heads
 
