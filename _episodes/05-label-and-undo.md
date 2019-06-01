@@ -35,12 +35,7 @@ At the time of this writing, my version of the lesson is “77 commits ahead and
 
 Each of the versions could be developed independently of each other, or an update to one page could be shared across each of them. For a visual example:
 
-
-
-<p id="gdcalert1" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/Lesson-40.png). Store image on your image server and adjust path/filename if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert2">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/Lesson-40.png "image_tooltip")
+![Abridged history of this lesson](fig/image1.png "Versions of this lesson at different lengths with different labels")
 
 
 (The original version is yellow; the cut-in-half version is pink. When you add a new blue lesson to the pink version you get the purple version. When you add that blue lesson to a trim of the yellow version, you get green. Gh-pages is the name of the branch that github.io watches for updates to what’s published on the live website, so other versions need to be put in other branches/tags.)
