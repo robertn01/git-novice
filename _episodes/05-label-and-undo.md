@@ -59,11 +59,15 @@ Understanding the label methods will help you navigate your history in order to 
 >
 > *   In some circumstances, switching to the **2015.08** branch returns an error message. In other circumstances it doesn’t. 
 >    *   Can you figure out the pattern? 
+>
 > *   Starting from [https://github.com/dlstrong/git-novice/tree/gh-pages/_episodes](https://github.com/dlstrong/git-novice/tree/gh-pages/_episodes)  again, under the **Branch:gh-pages** drop menu, go to the **Tags** section and pick **it-pro-forum-2018**.
 >    *   What else changed about your view when you chose that tag?
+>
 > *   How would you examine the differences between my **patch-1** and my **gh-pages**?  \
 > (Hint: There’s a Compare link on the right, below the History button.) 
+>
 > *   How would you examine the differences between **my it-pro-forum-2018** and **biologyguy’s gh-pages**?
+>
 > *   Between Software Carpentry’s instance, biologyguy’s instance, and my instance, how would you identify the difference between what’s called a **fork**, what’s called a **branch**, and what’s called a **tag**? (Bonus points for explaining when and why you would use each.)
 {: .challenge}
 
