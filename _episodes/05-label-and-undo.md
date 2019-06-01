@@ -450,6 +450,7 @@ I’d recommend using GitHub’s history features to explore past states when yo
 > > `git checkout master`
 > >
 > > (If you weren’t using master, substitute the name of the branch you were working in.)
+> >
 > {: .solution}
 {: .challenge}
 
@@ -461,13 +462,11 @@ Revert and reset are two different ways of saying “Whoops, that should not hav
 
 In general:
 
-
-
-*   ** Reset** is most useful when that thing needs to be undone on your **local computer** (by overwriting your working spaces from your local repository). If it hasn’t been pushed to a remote repository, you can take things out of your local history before they get pushed. Reset can apply to individual files or whole commits. \
+*   **Reset** is most useful when that thing needs to be undone on your **local computer** (by overwriting your working spaces from your local repository). If it hasn’t been pushed to a remote repository, you can take things out of your local history before they get pushed. Reset can apply to individual files or whole commits. \
 
 *   **Revert** is most useful when that thing needs to be undone in a **shared repository** (by making a new commit that specifically undoes what a previous commit did). This is important in shared spaces because someone else’s work may depend on a particular commit continuing to exist, even if it’s not the latest commit. (Sometimes the person who needs that past commit can be you!) There is no file-level revert; it only works with whole commits. 
 
-**SECURITY NOTE: If the thing that needs to be undone involved putting a file containing a password into GitHub.com, the very first thing you should do is change that password on that system, before you do anything else. **(There’s no way for ordinary mortals to beat the speed of the bots looking for passwords on GitHub.com.)
+**SECURITY NOTE: If the thing that needs to be undone involved putting a file containing a password into GitHub.com, the very first thing you should do is change that password on that system, before you do anything else.** (There’s no way for ordinary mortals to beat the speed of the bots looking for passwords on GitHub.com.)
 
 The checkout command grabs a copy from that earlier point in time, but git still remembers that the later commits exist. The reset command moves pointers so that git will forget those commits.
 
