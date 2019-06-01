@@ -501,25 +501,25 @@ git reset --hard A1
 ![alt_text](../fig/image3.png)
 
 
-## Activity: Variations of reset
-
-Let’s look at the different versions of reset.
-
-
-
-1. `git checkout` something
-2. Make changes
-3. `git add` your changes
-4. `git status`
-5. `git reset` (the default behavior is --mixed)
-6. `git status`
-7. `git add` (which will place the same files that you did in step 3)
-8. `git status`
-9. `git reset --hard`
-10. `git status` 
-
-What differences do you see between the --mixed and --hard versions?
-
+> ## Activity: Variations of reset
+>
+> Let’s look at the different versions of reset.
+>
+>
+>
+> 1. `git checkout` something
+> 2. Make changes
+> 3. `git add` your changes
+> 4. `git status`
+> 5. `git reset` (the default behavior is --mixed)
+> 6. `git status`
+> 7. `git add` (which will place the same files that you did in step 3)
+> 8. `git status`
+> 9. `git reset --hard`
+> 10. `git status` 
+>
+> What differences do you see between the --mixed and --hard versions?
+{: .challenge}
 
 ## Revert
 
@@ -533,41 +533,22 @@ Note that unlike reset, which undoes everything between the commits, revert only
 ```
 git revert B2
 ```
-
-
 or
-
-
 ```
 git revert HEAD~1
 ```
 
-
-
-
-<p id="gdcalert9" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/Lesson-48.png). Store image on your image server and adjust path/filename if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert10">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](../fig/image9.png)
-
+![alt_text](../fig/image10.png)
 
 If you want to revert everything since commit A1, you need to designate each commit to undo:
-
 
 ```
 git revert B2 C3
 ```
-
-
 or
 
-`git revert HEAD~1 HEAD~2` 
+```
+git revert HEAD~1 HEAD~2
+```
 
-<p id="gdcalert10" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/Lesson-49.png). Store image on your image server and adjust path/filename if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert11">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](../fig/image10.png)
-
-
-
-<!-- Docs to Markdown version 1.0β17 -->
+![alt_text](../fig/image5.png)
