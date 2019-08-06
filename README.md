@@ -1,13 +1,13 @@
 git-novice
 ==========
 
-An introduction to version control for IT pros using Git, modified for the IT Pro Forum in June 2018.
+An introduction to version control for IT pros using Git, modified for the IT Pro Forum in June 2018 and 2019.
 Please see <http://dlstrong.github.io/git-novice/> for a rendered version of this material,
 [the lesson template documentation][lesson-example]
 for instructions on formatting, building, and submitting material,
 or run `make` in this directory for a list of helpful commands.
 
-Maintainers:
+Maintainers of the original version:
 
 * [Ivan Gonzalez][gonzalez_ivan]
 * [Daisie Huang][huang_daisie]
