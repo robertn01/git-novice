@@ -14,7 +14,7 @@ keypoints:
 - "Branches are names that will move forward as you add more commits. Branches identify lines of thought or particular variations."
 - "`git checkout` brings specified versions into your working directory for investigation."
 - "`git checkout -b` creates a named branch during checkout so that you won't develop new code from a detached HEAD."
-- "`git reset` removes commits from your history."
+- "`git reset` removes commits from your history - use with caution!"
 - "`git revert` makes a new commit that counteracts the commits you want to undo."
 - "Always write a log message when committing changes."
 ---
@@ -31,7 +31,7 @@ This year we have up to 3 hours for the introduction, so I’m adding in new inf
 
 In the future, I might want to add this page into a 4-hour edition of the class and take something else out. But the page you see at https://dlstrong.github.io/git-novice only displays the most recent thing in the “gh-pages” branch, meaning that if I want to show the 4-hour edition in the web page instead, I’d need to grab that version out of the repository history and copy it to the newest point in the gh-pages branch again.
 
-At the time of this writing, my version of the lesson is “77 commits ahead and 564 commits behind” the Software Carpentry lesson, based on Steve Bond (biologyguy)’s particular fork rather than the main repository. That’s a lot of differences to go through and compare, if and when I’m trying to find this version later. So I use branching and tagging and releases to mark different editions that I can easily get hold of later. 
+At the time of this writing, my version of the lesson is “124 commits ahead and 765 commits behind” the Software Carpentry lesson, based on Steve Bond (biologyguy)’s particular fork rather than the main repository. That’s a lot of differences to go through and compare, if and when I’m trying to find this version later. So I use branching and tagging and releases to mark different editions that I can easily get hold of later. 
 
 Each of the versions could be developed independently of each other, or an update to one page could be shared across each of them. For a visual example:
 
@@ -141,19 +141,19 @@ Git commands can be used to reset each of these spaces with individual commits, 
    </td>
   </tr>
   <tr>
-   <td><code>git reset</code>
+   <td>(Advanced) <code>git reset</code>
    </td>
    <td>Commit/branch/tag-level
    </td>
-   <td>Discard commits in a private branch or throw away uncommited changes
+   <td>Discard commits in a private branch or throw away uncommited changes - use with caution
    </td>
   </tr>
   <tr>
-   <td><code>git reset</code>
+   <td>(Advanced) <code>git reset</code>
    </td>
    <td>File-level
    </td>
-   <td>Unstage a file
+   <td>Unstage a file - use with caution
    </td>
   </tr>
   <tr>
@@ -466,9 +466,9 @@ Revert and reset are two different ways of saying “Whoops, that should not hav
 
 In general:
 
-*   **Reset** is most useful when that thing needs to be undone on your **local computer** (by overwriting your working spaces from your local repository). If it hasn’t been pushed to a remote repository, you can take things out of your local history before they get pushed. Reset can apply to individual files or whole commits. \
+*   **Reset** is complex and powerful; it will be covered in more detail in the Advanced section. Right now, we want to let you know it exists. Reset can apply to individual files or whole commits at different locations, possibly including staged spaces and repositories. \
 
-*   **Revert** is most useful when that thing needs to be undone in a **shared repository** (by making a new commit that specifically undoes what a previous commit did). This is important in shared spaces because someone else’s work may depend on a particular commit continuing to exist, even if it’s not the latest commit. (Sometimes the person who needs that past commit can be you!) There is no file-level revert; it only works with whole commits. 
+*   **Revert** is usually a safer option, because it leaves more visibility into what was done. Revert is particularly useful when that thing needs to be undone in a **shared repository** (by making a new commit that specifically undoes what a previous commit did). This is important in shared spaces because someone else’s work may depend on a particular commit continuing to exist, even if it’s not the latest commit. (Sometimes the person who needs that past commit can be you!) There is no file-level revert; it only works with whole commits. 
 
 **SECURITY NOTE: If the thing that needs to be undone involved putting a file containing a password into GitHub.com, the very first thing you should do is change that password on that system, before you do anything else.** (There’s no way for ordinary mortals to beat the speed of the bots looking for passwords on GitHub.com.)
 
