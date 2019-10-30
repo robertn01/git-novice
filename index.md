@@ -2,7 +2,7 @@
 layout: lesson
 root: .
 ---
-Welcome to the June 2018 IT Pro Forum Workshop Day - Introduction to Git.
+Welcome to the IT Pro Forum Workshop Day - Introduction to Git.
 
 > ## Prerequisites
 >
