@@ -106,6 +106,14 @@ Understanding the label methods will help you navigate your history in order to 
 > {: .solution}
 {: .challenge}
 
+> ## Activity: Discuss GitHub's preferred tag naming conventions
+>
+> If you follow a tag naming convention like v1.0.0, GitHub can give you some automatic assistance with
+> making connections between tags, pull requests, issues, and resolutions to issues. This is a good time
+>  to discuss those conventions with the professional developers among the teaching crew!
+>
+{: .challenge}
+
 ## Grabbing a specific version from different levels of storage
 
 Now that we have different ways of labeling things, we need to look at how to get hold of the piece you want in the way you want it. Remember that you have basically 4 different spaces in Git (before considering forks and branches as additional spaces):
@@ -293,15 +301,6 @@ In the picture above, you’ll notice that the word HEAD is pointing at the last
 If you’re working under a detached HEAD that’s not pointing at the latest item in a named branch, git won’t know how to connect new commits to the rest of the tree. You can git checkout older versions without branch names (i.e. put yourself in a detached HEAD state) to look around the history, but you’re risking potential confusion if you make any changes from that point. 
 
 I’d recommend using GitHub’s history features to explore past states when you can, and checking out into named branches to avoid chaos when you need to make changes starting from past states.
-
-> ## Activity: Discuss GitHub's preferred tag naming conventions
->
-> If you follow a tag naming convention like v1.0.0, GitHub can give you some automatic assistance with
-> making connections between tags, pull requests, issues, and resolutions to issues. This is a good time
->  to discuss those conventions with the professional developers among the teaching crew!
->
-{: .challenge}
-
 
 <!-- This example is too convoluted - raid for info later
 > ## Activity: Checking out different units
