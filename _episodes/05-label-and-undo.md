@@ -294,7 +294,16 @@ If you’re working under a detached HEAD that’s not pointing at the latest it
 
 I’d recommend using GitHub’s history features to explore past states when you can, and checking out into named branches to avoid chaos when you need to make changes starting from past states.
 
+> ## Activity: Discuss GitHub's preferred tag naming conventions
+>
+> If you follow a tag naming convention like v1.0.0, GitHub can give you some automatic assistance with
+> making connections between tags, pull requests, issues, and resolutions to issues. This is a good time
+>  to discuss those conventions with the professional developers among the teaching crew!
+>
+{: .challenge}
 
+
+<!-- This example is too convoluted - raid for info later
 > ## Activity: Checking out different units
 >
 >
@@ -387,7 +396,7 @@ I’d recommend using GitHub’s history features to explore past states when yo
 > > 
 > {: .solution}
 {: .challenge}
-
+-->
 
 > ## Activity: Checking out an individual file
 >
