@@ -474,6 +474,8 @@ In general:
 
 The checkout command grabs a copy from that earlier point in time, but git still remembers that the later commits exist. The reset command moves pointers so that git will forget those commits.
 
+<!-- Commenting this out -- reset is for the advanced section
+
 `git reset` offers three different methods of undoing things based on how much you’d like to change your stage and working directory.
 
 `git reset`’s default `--mixed` behavior will update your stage, but leaves your working directory alone:
@@ -524,6 +526,7 @@ git reset --hard A1
 >
 > What differences do you see between the --mixed and --hard versions?
 {: .challenge}
+-->
 
 ## Revert
 
@@ -556,3 +559,9 @@ git revert HEAD~1 HEAD~2
 ```
 
 ![alt_text](../fig/image5.png)
+
+> ## Activity: Fireside Chat with Ed
+>
+> "Ask Ed Anything" about his experiences with when and how to use different methods of undoing things in real use cases!
+>
+{: .challenge}
