@@ -92,7 +92,7 @@ Understanding the label methods will help you navigate your history in order to 
 > ### Tagging a couple of past commits
 >
 > Sometimes you don’t realize how significant something will be until later on. Let’s say we want to mark a version 0.2.0 as well. 
-> Use GitHub interface’s History button to identify two earlier commits. (For example, [https://github.com/dlstrong/git-novice/commits/gh-pages/_episodes](https://github.com/dlstrong/git-novice/commits/gh-pages/_episodes) shows several commits on June 10, 2018 that could be selected. Your version history and hashes will be different.)
+> Use GitHub interface’s History button to identify two earlier commits. (For example, [https://github.com/dlstrong/git-novice/commits/gh-pages/_episodes](https://github.com/dlstrong/git-novice/commits/gh-pages/_episodes) shows several commits on June 10, 2018 that could be selected. Your version history and hashes will be different, because hashes are calculated based on both the contents of the file and the metadata like the date, time, author, and commit message.)
 >
 >
 >
@@ -208,8 +208,17 @@ This will bring the staged version of `file.txt` back into your working director
 
 ![file.txt moving from stage into your working directory, independent of any commit ID](../fig/image9.png)
 
+### (Where's my HEAD?)
 
-If you tell checkout which version you want from your local repository, it will pull from that version rather than from the stage. To save commit lookup time, you can count how many versions back from your current HEAD pointer position you’d like to look -- for example,  HEAD~2 refers to two versions back from the latest commit in your currently active branch. 
+Keeping track of your HEAD is a good idea in several contexts, including both git and the French Revolution. 
+
+Most of the time, your git HEAD is going to point at the most recent thing you've been working with. Imagine it as the top item in a stack of things on a table, the thing that you're currently working with. (In this case, we'll change our mental model from folders to books, because people are used to checking books out from a library, and checkout is one of the commands that moves HEAD around.)
+
+However, when you have a pile of commit-"books" to look through, sometimes you want to look further back in time, or to try out a new line of thought. You may want a way to look at what was in that thing you were working with a week ago without knocking over the rest of the book-pile on your digital desk.
+
+### Looking further back in the stack with checkout
+
+If you tell checkout which version you want from your local repository, it will pull from the local repository rather than from the stage. To save commit lookup time, you can count how many versions back from your current HEAD pointer position you’d like to look -- for example,  HEAD~2 refers to two versions back from the latest commit in your currently active branch, or two books lower in your book-pile. 
 
 So if commit C3 is the latest, and commit A1 is two before that, then here's how to get a copy of the A1 version of `file` and put it in your working directory, but leave the rest of your work at its current state:
 
