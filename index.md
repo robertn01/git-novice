@@ -10,3 +10,5 @@ Welcome to the IT Pro Forum Workshop Day - Introduction to Git.
 > Some previous experience with the shell is expected,
 > *but isn't mandatory*.
 {: .prereq}
+
+{%- include links.md -%}

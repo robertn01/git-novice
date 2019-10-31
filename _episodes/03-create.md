@@ -13,15 +13,15 @@ keypoints:
 Once Git is configured, we can start using it. We are going to start out looking
  at everything through the lens of [GitHub](https://github.com/), which
  is a highly popular online repository host that makes creating and
- managing repositories very easy. 
+ managing repositories very easy.
 
 
 Open your web browser to [GitHub](https://github.com/) and log in (or
  create an account if necessary)
- 
+
 From your main dashboard, click on the little '+' drop-down menu and
  select 'New repository'
- 
+
 ![Creating a Repository on GitHub (Step 1)](../fig/github-create-repo-01.png)
 
 &nbsp;
@@ -54,7 +54,7 @@ $ ls -a
 We should see a pristine Git repository with a README file:
 
 ~~~
-.	..	.git	README
+. ..  .git  README
 ~~~
 {: .output}
 
@@ -77,3 +77,5 @@ $ git status
 nothing to commit (create/copy files and use "git add" to track)
 ~~~
 {: .output}
+
+{%- include links.md -%}

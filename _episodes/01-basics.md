@@ -20,3 +20,5 @@ This workshop is trimmed from the full Software Carpentry Intro to Git lesson. B
 * If you have Git on your own computer, feel free to use it.
 * If you need a computer lab machine, log in using the guest user name and password next to your computer.
 * If there aren't two sticky notes by your computer, get one of each color.
+
+{%- include links.md -%}

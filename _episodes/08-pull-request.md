@@ -115,3 +115,5 @@ Accepting the request is as simple as hitting the green button, **BUT BE
 > Try to think of some reasons you may want to reject a pull request.
 {: .challenge}
 
+
+{%- include links.md -%}

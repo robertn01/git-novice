@@ -91,3 +91,5 @@ same commands to choose another editor or update your email address.
 {: .callout}
 
 [git-privacy]: https://help.github.com/articles/keeping-your-email-address-private/
+
+{%- include links.md -%}
