@@ -192,16 +192,18 @@ Git checkout can be used on individual files, particular commits, or entire bran
 
 To look at a particular version of a specific file, you include the file name (and/or its path as needed for disambiguation) in the command. This brings that version of the file into your working directory:
 
-```
+~~~
 git checkout <description of which version> <filename>
-```
+~~~
+{: .language-bash}
 
 If you don't tell it which version of a file you want, it assumes you want to get the version in your **staging area**:
 
 
-```
+~~~
 git checkout file.txt
-```
+~~~
+{: .language-bash}
 
 This will bring the staged version of `file.txt` back into your working directory.
 
@@ -222,9 +224,10 @@ If you tell checkout which version you want from your local repository, it will 
 
 So if commit C3 is the latest, and commit A1 is two before that, then here's how to get a copy of the A1 version of `file` and put it in your working directory, but leave the rest of your work at its current state:
 
-```
+~~~
 git checkout HEAD~2 file
-```
+~~~
+{: .language-bash}
 
 ![Getting A1's copy of file and moving it to the working directory](../fig/image1.png)
 
@@ -232,24 +235,27 @@ git checkout HEAD~2 file
 
 If you decide that everything you've done since the last commit was a bad idea and you want to clear the decks and re-start from your last commit, you'd use this command to copy everything from commit C3 (the latest version and "HEAD" of the line) back into your working directory:
 
-```
+~~~
 git checkout HEAD
-```
+~~~
+{: .language-bash}
 
 In contrast, if you check out an entire commit that's **older than the latest**, you're probably going to want to name a branch while you do it to avoid developing in a detached HEAD state. (Just take my word for it right now. We'll translate that into English later.)
 
 **If you don't have a branch already made** and you'd like to make a new branch, you use -b to name the branch during the checkout:
 
 
-```
+~~~
 git checkout <some-commit> -b <branchname>
-```
+~~~
+{: .language-bash}
 
 In this illustration, we're getting version A1 by using HEAD~2 and naming the new branch BranchA during the checkout:
 
-```
+~~~
 git checkout HEAD~2 -b BranchA
-```
+~~~
+{: .language-bash}
 
 ![Creating BranchA and naming it while checking out a commit 2 older than the most recent](../fig/image8.png)
 
@@ -259,9 +265,10 @@ If you want to save your changes temporarily -- or if Git gives you a warning th
 
 **If you already have a branch,** and you want to update your working directory to work on that branch, the command looks like this:
 
-```
+~~~
 git checkout <branchname>
-```
+~~~
+{: .language-bash}
 
 In the images below from Atlassian's tutorial, we're switching from the master branch to the hotfix branch by using `git checkout hotfix`:
 
@@ -269,21 +276,24 @@ In the images below from Atlassian's tutorial, we're switching from the master b
 
 When you're done working with the hotfix branch and have added and committed your change there, you can go back to the main branch by telling it that you want to check out "master" again:
 
-```
+~~~
 git checkout master
-```
+~~~
+{: .language-bash}
 
 ### Checking out tags and specific hashes
 
 Remember the version 0.2.0 and 0.5.0 tags we made in the earlier activity? You can check out tagged versions by telling Git that the identifying word you use is a tag name rather than a branch name:
 
-```
+~~~
 git checkout tags/v0.2.0
-```
+~~~
+{: .language-bash}
 or
-```
+~~~
 git checkout tags/itpf2019
-```
+~~~
+{: .language-bash}
 
 You can get a list of tag names in the GitHub.com interface or with the `git tag` command on the command line.
 
@@ -291,13 +301,15 @@ You can get a list of tag names in the GitHub.com interface or with the `git tag
 
 If the hash for a particular commit is more readily available than the tag name or how far back in a branch the particular version is, you can also check out via hash code:
 
-```
+~~~
 git checkout hash/a1b2c3d
-```
+~~~
+{: .language-bash}
 or
-```
+~~~
 git checkout a1b2c3d
-```
+~~~
+{: .language-bash}
 
 (Generally speaking, your tag and branch names shouldn't be the same as a hash, so you probably won't need to tell git which type of identifier you're using here.)
 
@@ -491,20 +503,24 @@ In general:
 
 The checkout command grabs a copy from that earlier point in time, but git still remembers that the later commits exist. The reset command moves pointers so that git will forget those commits.
 
-<!-- Commenting this out -- reset is for the advanced section
+{% comment %}
+<!-- reset is for the advanced section -->
 
 `git reset` offers three different methods of undoing things based on how much you'd like to change your stage and working directory.
 
 `git reset`'s default `--mixed` behavior will update your stage, but leaves your working directory alone:
 
-```
+~~~
 git reset HEAD~2
-```
+~~~
+{: .language-bash}
+
 or
 
-```
+~~~
 git reset A1
-```
+~~~
+{: .language-bash}
 (implies `git reset --mixed HEAD~2 `or `A1`)
 
 ![alt_text](../fig/image4.png)
@@ -512,14 +528,16 @@ git reset A1
 
  If you want to entirely clear the decks and make your working directory match your reset point as well, you want:
 
-```
+~~~
 git reset --hard HEAD~2
-```
+~~~
+{: .language-bash}
 or
 
-```
+~~~
 git reset --hard A1
-```
+~~~
+{: .language-bash}
 
 ![alt_text](../fig/image3.png)
 
@@ -543,7 +561,7 @@ git reset --hard A1
 >
 > What differences do you see between the --mixed and --hard versions?
 {: .challenge}
--->
+{% endcomment %}
 
 ## Revert
 
@@ -554,26 +572,33 @@ In contrast with reset, `revert` leaves all the commits available to the history
 Note that unlike reset, which undoes everything between the commits, revert only undoes the commits that you specify. So if you have commits A1, B2, and C3, the command `git revert B2` will create a new commit D4 that includes A1 and C3.
 
 
-```
+~~~
 git revert B2
-```
+~~~
+{: .language-bash}
+
 or
-```
+
+~~~
 git revert HEAD~1
-```
+~~~
+{: .language-bash}
 
 ![alt_text](../fig/image10.png)
 
 If you want to revert everything since commit A1, you need to designate each commit to undo:
 
-```
+~~~
 git revert B2 C3
-```
+~~~
+{: .language-bash}
+
 or
 
-```
+~~~
 git revert HEAD~1 HEAD~2
-```
+~~~
+{: .language-bash}
 
 ![alt_text](../fig/image5.png)
 
