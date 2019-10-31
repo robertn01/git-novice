@@ -161,3 +161,5 @@ You should make a habit of always pulling from the remote repository
 > > "`git push`" sends those changes to the remote copy of the repository
 > {: .solution}
 {: .challenge}
+
+{%- include links.md -%}

@@ -3,7 +3,7 @@ title: Ignoring Things
 teaching: 5
 exercises: 5
 questions:
-- "How can I tell Git to ignore files I don't want to track? With .gitignore. (Skipping details for time)" 
+- "How can I tell Git to ignore files I don't want to track? With .gitignore. (Skipping details for time)"
 objectives:
 - "Configure Git to ignore specific files."
 - "Explain why ignoring files can be useful."
@@ -35,10 +35,10 @@ On branch master
 Untracked files:
   (use "git add <file>..." to include in what will be committed)
 
-	a.dat
-	b.dat
-	c.dat
-	results/
+  a.dat
+  b.dat
+  c.dat
+  results/
 nothing added to commit but untracked files present (use "git add" to track)
 ~~~
 {: .output}
@@ -80,7 +80,7 @@ On branch master
 Untracked files:
   (use "git add <file>..." to include in what will be committed)
 
-	.gitignore
+  .gitignore
 nothing added to commit but untracked files present (use "git add" to track)
 ~~~
 {: .output}
@@ -258,3 +258,5 @@ nothing to commit, working directory clean
 > > 3. track `log_01` using   `git add -f log_01`
 > {: .solution}
 {: .challenge}
+
+{%- include links.md -%}

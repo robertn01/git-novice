@@ -56,7 +56,7 @@ $ ls
 {: .bash}
 
 ~~~
-README.md	ToDo.txt
+README.md ToDo.txt
 ~~~
 {: .output}
 
@@ -90,7 +90,7 @@ Initial commit
 Untracked files:
    (use "git add <file>..." to include in what will be committed)
 
-	ToDo.txt
+  ToDo.txt
 nothing added to commit but untracked files present (use "git add" to track)
 ~~~
 {: .output}
@@ -119,7 +119,7 @@ Initial commit
 Changes to be committed:
   (use "git rm --cached <file>..." to unstage)
 
-	new file:   ToDo.txt
+  new file:   ToDo.txt
 
 ~~~
 {: .output}
@@ -177,7 +177,7 @@ it tells us that our local repository is now differing from the
 origin (the repository from which we cloned this one, i.e. the original repository in Github)
 by one commit.
 
-It also tells us that we can use the `git push` command to send our commit to the original repo in 
+It also tells us that we can use the `git push` command to send our commit to the original repo in
 Github to synchronize these two repositories.
 
 If we want to know what we've done recently,
@@ -251,7 +251,7 @@ Changes not staged for commit:
   (use "git add <file>..." to update what will be committed)
   (use "git checkout -- <file>..." to discard changes in working directory)
 
-	modified:   ToDo.txt
+  modified:   ToDo.txt
 
 no changes added to commit (use "git add" and/or "git commit -a")
 ~~~
@@ -314,7 +314,7 @@ Changes not staged for commit:
   (use "git add <file>..." to update what will be committed)
   (use "git checkout -- <file>..." to discard changes in working directory)
 
-	modified:   ToDo.txt
+  modified:   ToDo.txt
 
 no changes added to commit (use "git add" and/or "git commit -a")
 ~~~
@@ -525,7 +525,7 @@ Date:   Thu Aug 22 09:51:46 2013 -0400
 > $ git status
 > ~~~
 > {: .bash}
-> 
+>
 > Note, our newly created empty directory `directory` does not appear in
 > the list of untracked files even if we explicitly add it (_via_ `git add`) to our
 > repository. This is the reason why you will sometimes see `.gitkeep` files
@@ -574,10 +574,10 @@ repository (`git commit`):
 >
 > 1. `$ git commit -m "my recent changes"`
 >
-> 2. `$ git init myfile.txt`  
+> 2. `$ git init myfile.txt`
 >    `$ git commit -m "my recent changes"`
 >
-> 3. `$ git add myfile.txt`  
+> 3. `$ git add myfile.txt`
 >    `$ git commit -m "my recent changes"`
 >
 > 4. `$ git commit -m myfile.txt "my recent changes"`
@@ -592,3 +592,5 @@ repository (`git commit`):
 {: .challenge}
 
 [commit-messages]: http://chris.beams.io/posts/git-commit/
+
+{%- include links.md -%}

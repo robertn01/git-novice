@@ -20,7 +20,7 @@ different changes to each copy.  Version control helps us manage these
 [resolve]({{ page.root }}/reference/#resolve) overlapping changes.
 
 **The condensed version:**
-We've created lots of different versions of the same file by having each person change the contributors.txt file independently. 
+We've created lots of different versions of the same file by having each person change the contributors.txt file independently.
 
 Let's take a look at how GitHub prompts us to merge these conflicting items.
 
@@ -267,7 +267,7 @@ All conflicts fixed but you are still merging.
 
 Changes to be committed:
 
-	modified:   conversion.py
+  modified:   conversion.py
 ~~~
 {: .output}
 
@@ -361,7 +361,7 @@ Version control's ability to merge conflicting changes
 
 > ## Solving Conflicts that You Create
 >
-> Each partner finish one of the remaining conversion functions 
+> Each partner finish one of the remaining conversion functions
 > (feet2inches() and degrees2radians()) in there own copy of a shared
 > repository and create another conflict. Use the same steps as above to
 > resolve the conflict
@@ -369,7 +369,7 @@ Version control's ability to merge conflicting changes
 
 > ## Conflicts on Non-textual files
 >
-> What does Git do when there is a conflict in an image or some other 
+> What does Git do when there is a conflict in an image or some other
 > non-textual file that is stored in version control?
 >
 > > ## Hint
@@ -379,7 +379,7 @@ Version control's ability to merge conflicting changes
 > {: .solution}
 >
 > > ## Solution
-> > 
+> >
 > > You must choose one version or the other, because it's impractical
 > > to edit the actual binary differences
 > {: .solution}
@@ -414,7 +414,7 @@ Version control's ability to merge conflicting changes
 > |6    | Celebrate!                | `AFK`                      |
 >
 > > ## Solution
-> > 
+> >
 > > |order|action . . . . . . . . . . |command . . . . . . . . . . |
 > > |-----|---------------------------|----------------------------|
 > > |1    | *Update local*            | `git pull`                 |
@@ -425,3 +425,5 @@ Version control's ability to merge conflicting changes
 > > |6    | *Celebrate!*              | `AFK`                      |
 > {: .solution}
 {: .challenge}
+
+{%- include links.md -%}
