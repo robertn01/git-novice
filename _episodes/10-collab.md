@@ -33,7 +33,7 @@ her `Desktop` folder, the Collaborator enters:
 ~~~
 $ git clone https://github.com/vlad/Vlad-conversion.git
 ~~~
-{: .bash}
+{: .language-bash}
 
 Replace the URL with the correct URL from the owner.
 
@@ -47,7 +47,7 @@ $ cd ~/Desktop/vlad-conversion
 $ nano conversion.py
 $ cat conversion.py
 ~~~
-{: .bash}
+{: .language-bash}
 
 ~~~
 > > # My Conversion Tools
@@ -62,7 +62,7 @@ $ cat conversion.py
 $ git add conversion.py
 $ git commit -m "Implement dollars2cents function"
 ~~~
-{: .bash}
+{: .language-bash}
 
 ~~~
  [master fc7397d] Implement dollars2cents function
@@ -75,7 +75,7 @@ Then push the change to the *Owner's repository* on GitHub:
 ~~~
 $ git push
 ~~~
-{: .bash}
+{: .language-bash}
 
 ~~~
 Counting objects: 3, done.
@@ -98,7 +98,7 @@ To download the Collaborator's changes from GitHub, the Owner now enters:
 ~~~
 $ git pull
 ~~~
-{: .bash}
+{: .language-bash}
 
 ~~~
 remote: Counting objects: 4, done.

@@ -49,7 +49,7 @@ $ git clone https://your_repository's_url
 $ cd your_repository
 $ ls -a
 ~~~
-{: .bash}
+{: .language-bash}
 
 We should see a pristine Git repository with a README file:
 
@@ -67,7 +67,7 @@ We can check that everything is set up correctly by asking Git to tell
 ~~~
 $ git status
 ~~~
-{: .bash}
+{: .language-bash}
 
 ~~~
 # On branch master

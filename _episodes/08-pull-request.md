@@ -38,7 +38,7 @@ $ mkdir forktest
 $ cd forktest
 $ git clone https://github.com/dlstrong/swc-forklesson.git
 ~~~
-{: .bash}
+{: .language-bash}
 
 (**Why you want to change directories:** If you're still in the same directory you
 were just working in, that's where clone will put the new content too.

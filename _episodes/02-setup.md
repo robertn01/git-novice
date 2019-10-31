@@ -29,7 +29,7 @@ $ git config --global user.name "Your Name"
 $ git config --global user.email "The email address you connect to GitHub with"
 $ git config --global color.ui "auto"
 ~~~
-{: .bash}
+{: .language-bash}
 
 Please use your own name and email address.
 This user name and email will be associated with your subsequent Git activity,
@@ -74,7 +74,7 @@ You can check your settings at any time:
 ~~~
 $ git config --list
 ~~~
-{: .bash}
+{: .language-bash}
 
 You can change your configuration as many times as you want: just use the
 same commands to choose another editor or update your email address.
@@ -87,7 +87,7 @@ same commands to choose another editor or update your email address.
 > $ git config -h
 > $ git config --help
 > ~~~
-> {: .bash}
+> {: .language-bash}
 {: .callout}
 
 [git-privacy]: https://help.github.com/articles/keeping-your-email-address-private/

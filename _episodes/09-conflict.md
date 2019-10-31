@@ -34,7 +34,7 @@ repository:
 ~~~
 $ cat conversion.py
 ~~~
-{: .bash}
+{: .language-bash}
 
 ~~~
 # My Conversion Tools
@@ -51,7 +51,7 @@ Let's add a new convert function to one partner's copy only:
 $ nano conversion.py
 $ cat conversion.py
 ~~~
-{: .bash}
+{: .language-bash}
 
 ~~~
 # My Conversion Tools
@@ -72,7 +72,7 @@ and then push the change to GitHub:
 $ git add conversion.py
 $ git commit -m "Adding gallons2liters function"
 ~~~
-{: .bash}
+{: .language-bash}
 
 ~~~
 [master 5ae9631] Adding gallons2liters
@@ -83,7 +83,7 @@ $ git commit -m "Adding gallons2liters function"
 ~~~
 $ git push
 ~~~
-{: .bash}
+{: .language-bash}
 
 ~~~
 Counting objects: 3, done.
@@ -105,7 +105,7 @@ make a different change to their copy
 $ nano conversion.py
 $ cat conversion.py
 ~~~
-{: .bash}
+{: .language-bash}
 
 ~~~
 # My Conversion Tools
@@ -126,7 +126,7 @@ We can commit the change locally:
 $ git add conversion.py
 $ git commit -m "Adding hours2mintes function"
 ~~~
-{: .bash}
+{: .language-bash}
 
 ~~~
 [master 07ebc69] Adding hours2mintes
@@ -139,7 +139,7 @@ but Git won't let us push it to GitHub:
 ~~~
 $ git push
 ~~~
-{: .bash}
+{: .language-bash}
 
 ~~~
 To https://github.com/biologyguy/conversions.git
@@ -165,7 +165,7 @@ Let's start by pulling:
 ~~~
 $ git pull
 ~~~
-{: .bash}
+{: .language-bash}
 
 ~~~
 remote: Counting objects: 3, done.
@@ -186,7 +186,7 @@ and marks that conflict in the affected file:
 ~~~
 $ cat conversion.py
 ~~~
-{: .bash}
+{: .language-bash}
 
 ~~~
 # My Conversion Tools
@@ -226,7 +226,7 @@ In this case, we want both functions, so let's simply delete the
 $ nano conversion.py
 $ cat conversion.py
 ~~~
-{: .bash}
+{: .language-bash}
 
 ~~~
 # My Conversion Tools
@@ -255,7 +255,7 @@ and then commit:
 $ git add conversion.py
 $ git status
 ~~~
-{: .bash}
+{: .language-bash}
 
 ~~~
 On branch master
@@ -274,7 +274,7 @@ Changes to be committed:
 ~~~
 $ git commit -m "Merging changes from GitHub"
 ~~~
-{: .bash}
+{: .language-bash}
 
 ~~~
 [master 2abf2b1] Merging changes from GitHub
@@ -286,7 +286,7 @@ Now we can push our changes to GitHub:
 ~~~
 $ git push
 ~~~
-{: .bash}
+{: .language-bash}
 
 ~~~
 Counting objects: 6, done.
@@ -307,7 +307,7 @@ when the collaborator who made the first change pulls again:
 ~~~
 $ git pull
 ~~~
-{: .bash}
+{: .language-bash}
 
 ~~~
 remote: Counting objects: 6, done.
@@ -328,7 +328,7 @@ We get the merged file:
 ~~~
 $ cat conversion.py
 ~~~
-{: .bash}
+{: .language-bash}
 
 ~~~
 # My Conversion Tools

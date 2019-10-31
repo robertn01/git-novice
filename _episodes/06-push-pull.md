@@ -44,7 +44,7 @@ Only the version of the repository on your laptop knows that other files
 ~~~
 $ git push
 ~~~
-{: .bash}
+{: .language-bash}
 
 ~~~
 Username for 'https://github.com': <ENTER YOUR GITHUB USERNAME HERE>
@@ -121,7 +121,7 @@ Back in your local repository, use the '`pull`' command to retrieve this
 ~~~
 $: git pull
 ~~~
-{: .bash}
+{: .language-bash}
 
 ~~~
 remote: Counting objects: 3, done.
