@@ -24,7 +24,7 @@ First, let's make sure we're all in the subdirectory we want to work in:
 ~~~
 $ pwd
 ~~~
-{: .bash}
+{: .language-bash}
 
 You should be in the subdirectory where you cloned your Git project.
 
@@ -35,7 +35,7 @@ but you can use whatever editor you like.)
 ~~~
 $ nano ToDo.txt
 ~~~
-{: .bash}
+{: .language-bash}
 
 Type the text below into the `ToDo.txt` file. Remember to save and exit you can type `CTRL + O` (then enter) followed by `CTRL + X`.
 
@@ -53,7 +53,7 @@ Conversion functions needed:
 ~~~
 $ ls
 ~~~
-{: .bash}
+{: .language-bash}
 
 ~~~
 README.md ToDo.txt
@@ -63,7 +63,7 @@ README.md ToDo.txt
 ~~~
 $ cat ToDo.txt
 ~~~
-{: .bash}
+{: .language-bash}
 
 ~~~
 Conversion functions needed:
@@ -80,7 +80,7 @@ Git tells us that it's noticed the new file:
 ~~~
 $ git status
 ~~~
-{: .bash}
+{: .language-bash}
 
 ~~~
 On branch master
@@ -102,14 +102,14 @@ We can tell Git to track a file using `git add`:
 ~~~
 $ git add ToDo.txt
 ~~~
-{: .bash}
+{: .language-bash}
 
 and then check that the right thing happened:
 
 ~~~
 $ git status
 ~~~
-{: .bash}
+{: .language-bash}
 
 ~~~
 On branch master
@@ -132,7 +132,7 @@ we need to run one more command:
 ~~~
 $ git commit -m "Start notes on conversion tools"
 ~~~
-{: .bash}
+{: .language-bash}
 
 ~~~
 [master (root-commit) f22b25e] Start notes on conversion tools
@@ -163,7 +163,7 @@ If we run `git status` now:
 ~~~
 $ git status
 ~~~
-{: .bash}
+{: .language-bash}
 
 ~~~
 On branch master
@@ -186,7 +186,7 @@ we can ask Git to show us the project's history using `git log`:
 ~~~
 $ git log
 ~~~
-{: .bash}
+{: .language-bash}
 
 ~~~
 commit f22b25e3233b4645dabd0d81e651fe074bd8e73b
@@ -218,14 +218,14 @@ Now suppose we add more information to the ToDo.txt file. Remember to save and e
 ~~~
 $ nano ToDo.txt
 ~~~
-{: .bash}
+{: .language-bash}
 
 ![Add extra lines to the existing file ToDo.txt](../fig/git-add-lines.png)
 
 ~~~
 $ cat ToDo.txt
 ~~~
-{: .bash}
+{: .language-bash}
 
 ~~~
 Conversion functions needed:
@@ -243,7 +243,7 @@ it tells us that a file it already knows about has been modified:
 ~~~
 $ git status
 ~~~
-{: .bash}
+{: .language-bash}
 
 ~~~
 On branch master
@@ -268,7 +268,7 @@ The last line is the key phrase: "no changes added to commit".
 ~~~
 $ git diff
 ~~~
-{: .bash}
+{: .language-bash}
 
 ~~~
 diff --git a/ToDo.txt b/ToDo.txt
@@ -306,7 +306,7 @@ After reviewing our change, it's time to commit it:
 ~~~
 $ git commit -m "Add another desirable conversion tool"
 ~~~
-{: .bash}
+{: .language-bash}
 
 ~~~
 On branch master
@@ -328,7 +328,7 @@ Let's fix that:
 $ git add ToDo.txt
 $ git commit -m "Add another desirable conversion tool"
 ~~~
-{: .bash}
+{: .language-bash}
 
 ~~~
 [master 34961b1] Add another desirable conversion tool
@@ -378,14 +378,14 @@ First, we'll add another line to the file. Remember to save and exit the file in
 ~~~
 $ nano ToDo.txt
 ~~~
-{: .bash}
+{: .language-bash}
 
 ![Add extra lines to the existing file ToDo.txt](../fig/git-add-more-lines.png)
 
 ~~~
 $ cat ToDo.txt
 ~~~
-{: .bash}
+{: .language-bash}
 
 
 ~~~
@@ -402,7 +402,7 @@ Conversion functions needed:
 ~~~
 $ git diff
 ~~~
-{: .bash}
+{: .language-bash}
 
 ~~~
 diff --git a/ToDo.txt b/ToDo.txt
@@ -427,7 +427,7 @@ and see what `git diff` reports:
 $ git add ToDo.txt
 $ git diff
 ~~~
-{: .bash}
+{: .language-bash}
 
 There is no output: as far as Git can tell,
 there's no difference between what it's been asked to save permanently
@@ -436,7 +436,7 @@ and what's currently in the directory. However, if we do this:
 ~~~
 $ git diff --staged
 ~~~
-{: .bash}
+{: .language-bash}
 
 ~~~
 diff --git a/ToDo.txt b/ToDo.txt
@@ -459,7 +459,7 @@ Let's save our changes:
 ~~~
 $ git commit -m "Add the Degrees to Radians conversion"
 ~~~
-{: .bash}
+{: .language-bash}
 
 ~~~
 [master 005937f] Add the Degrees to Radians conversion
@@ -472,7 +472,7 @@ check our status:
 ~~~
 $ git status
 ~~~
-{: .bash}
+{: .language-bash}
 
 ~~~
 On branch master
@@ -488,7 +488,7 @@ and look at the history of what we've done so far:
 ~~~
 $ git log
 ~~~
-{: .bash}
+{: .language-bash}
 
 ~~~
 commit 005937fbe2a98fb83f0ade869025dc2636b4dad5
@@ -524,7 +524,7 @@ Date:   Thu Aug 22 09:51:46 2013 -0400
 > $ git add directory
 > $ git status
 > ~~~
-> {: .bash}
+> {: .language-bash}
 >
 > Note, our newly created empty directory `directory` does not appear in
 > the list of untracked files even if we explicitly add it (_via_ `git add`) to our
@@ -540,7 +540,7 @@ Date:   Thu Aug 22 09:51:46 2013 -0400
 > ~~~
 > git add <directory-with-files>
 > ~~~
-> {: .bash}
+> {: .language-bash}
 >
 {: .callout}
 
