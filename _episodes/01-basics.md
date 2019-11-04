@@ -6,10 +6,10 @@ questions:
 - "How do I get started?"
 - "What do I do with these sticky notes anyway?"
 objectives:
-- Understand the workshop structure
+- "Understand the workshop structure"
 - "Understand how to signal the instructor and helpers during the workshop."
 keypoints:
-- We'll use the sticky notes for signaling the instructor and the helpers during the class. That way you don't need to have your hand up while waiting for someone to be free to help.
+- "Sticky notes are signals to the instructor(s) and helper(s) during the class."
 - "Blue-green is Yes / Good / Agree / I'm Caught Up."
 - "Yellow is No / Alert / Disagree / I Need Help."
 ---
