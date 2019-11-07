@@ -11,7 +11,7 @@ objectives:
 keypoints:
 - "Sticky notes are signals to the instructor(s) and helper(s) during the class."
 - "Blue-green is Yes / Good / Agree / I'm Caught Up."
-- "Yellow is No / Alert / Disagree / I Need Help."
+- "Orange is No / Alert / Disagree / I Need Help."
 ---
 
 This workshop is trimmed from the full Software Carpentry Intro to Git lesson. Because we have a computer lab with Git already available, we're making a few preparatory steps simpler:
