@@ -101,7 +101,7 @@ The maintainer will most likely get an email about the new pull request,
 &nbsp;
 
 Accepting the request is as simple as hitting the green button, **BUT BE
- CAREFUL!**. Always look at the cimmit history, and check what changes
+ CAREFUL!**. Always look at the commit history, and check what changes
  are included in the pull request. You don't want the merge to break
  your code. Check the '`Commits`' and '`Files changed`' tabs to be sure.
 
