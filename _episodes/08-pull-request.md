@@ -106,6 +106,7 @@ Accepting the request is as simple as hitting the green button, **BUT BE
  your code. Check the '`Commits`' and '`Files changed`' tabs to be sure.
 
 ![Forking repo (Step 1)](../fig/github-fork-06.png)
+
 &nbsp;
 
 
