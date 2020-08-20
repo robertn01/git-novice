@@ -79,7 +79,7 @@ You'll use the Base Fork and Head Fork buttons to choose what to send where. (If
 Compare the changes you want to add to your pull request and send it off.
 
 (In the screen shots below, "deliciouslyevil" is the Dracula persona who's the repository maintainer
-used in Software Carpentry examples, and "biologyguy" is the contributor who's submitting Kristin's
+used in Software Carpentry examples, and "biologyguy" is the contributor who's submitting Kristen's
 edits to the central collection.)
 
 ![Forking repo (Step 1)](../fig/github-fork-03.png)
@@ -106,7 +106,6 @@ Accepting the request is as simple as hitting the green button, **BUT BE
  your code. Check the '`Commits`' and '`Files changed`' tabs to be sure.
 
 ![Forking repo (Step 1)](../fig/github-fork-06.png)
-
 &nbsp;
 
 
